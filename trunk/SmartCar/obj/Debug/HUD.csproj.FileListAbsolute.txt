@@ -1,0 +1,7 @@
+J:\James Reale\SmartCar\bin\Debug\SmartCar.exe
+J:\James Reale\SmartCar\bin\Debug\SmartCar.pdb
+J:\James Reale\SmartCar\obj\Debug\ResolveAssemblyReference.cache
+J:\James Reale\SmartCar\obj\Debug\SmartCar.Properties.Resources.resources
+J:\James Reale\SmartCar\obj\Debug\HUD.csproj.GenerateResource.Cache
+J:\James Reale\SmartCar\obj\Debug\SmartCar.exe
+J:\James Reale\SmartCar\obj\Debug\SmartCar.pdb

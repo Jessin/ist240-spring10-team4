@@ -1,0 +1,7 @@
+J:\James Reale\MonSys\bin\Debug\MonSys.exe
+J:\James Reale\MonSys\bin\Debug\MonSys.pdb
+J:\James Reale\MonSys\obj\Debug\ResolveAssemblyReference.cache
+J:\James Reale\MonSys\obj\Debug\MonSys.Properties.Resources.resources
+J:\James Reale\MonSys\obj\Debug\MonSys.csproj.GenerateResource.Cache
+J:\James Reale\MonSys\obj\Debug\MonSys.exe
+J:\James Reale\MonSys\obj\Debug\MonSys.pdb
