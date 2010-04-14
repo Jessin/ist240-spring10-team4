@@ -8,7 +8,7 @@ namespace library_dll.Entities
     class Equipment
     {
         protected string _model, _series;
-        protected CarSystem.CSMode mode;
+        //protected CarSystem.CSMode mode;
 
         public string Series
         {
