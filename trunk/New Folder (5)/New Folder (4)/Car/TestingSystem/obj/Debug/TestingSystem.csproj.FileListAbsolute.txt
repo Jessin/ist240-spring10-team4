@@ -1,0 +1,7 @@
+J:\James Reale\TestingSystem\bin\Debug\TestingSystem.exe
+J:\James Reale\TestingSystem\bin\Debug\TestingSystem.pdb
+J:\James Reale\TestingSystem\obj\Debug\ResolveAssemblyReference.cache
+J:\James Reale\TestingSystem\obj\Debug\TestingSystem.Properties.Resources.resources
+J:\James Reale\TestingSystem\obj\Debug\TestingSystem.csproj.GenerateResource.Cache
+J:\James Reale\TestingSystem\obj\Debug\TestingSystem.exe
+J:\James Reale\TestingSystem\obj\Debug\TestingSystem.pdb

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <speed Type="Speed">40</speed>
+  <direction Type="direction">North</direction>
+  <distance Type="distance">500</distance>
+  <wiperspeed Type="wiperspeed">0</wiperspeed>
+  <light light="light">OFF</light>
+</document>
