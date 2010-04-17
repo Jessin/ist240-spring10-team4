@@ -1,0 +1,28 @@
+C:\Documents and Settings\jpj5048\My Documents\Visual Studio 2008\Projects\library_dll\HUD\bin\Debug\HUD.exe
+C:\Documents and Settings\jpj5048\My Documents\Visual Studio 2008\Projects\library_dll\HUD\bin\Debug\HUD.pdb
+C:\Documents and Settings\jpj5048\My Documents\Visual Studio 2008\Projects\library_dll\HUD\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\jpj5048\My Documents\Visual Studio 2008\Projects\library_dll\HUD\obj\Debug\HUD.Properties.Resources.resources
+C:\Documents and Settings\jpj5048\My Documents\Visual Studio 2008\Projects\library_dll\HUD\obj\Debug\HUD.csproj.GenerateResource.Cache
+C:\Documents and Settings\jpj5048\My Documents\Visual Studio 2008\Projects\library_dll\HUD\obj\Debug\HUD.exe
+C:\Documents and Settings\jpj5048\My Documents\Visual Studio 2008\Projects\library_dll\HUD\obj\Debug\HUD.pdb
+C:\Documents and Settings\J & J\Desktop\New Folder (6)\New Folder (5)\Projects\library_dll\HUD\bin\Debug\HUD.exe
+C:\Documents and Settings\J & J\Desktop\New Folder (6)\New Folder (5)\Projects\library_dll\HUD\bin\Debug\HUD.pdb
+C:\Documents and Settings\J & J\Desktop\New Folder (6)\New Folder (5)\Projects\library_dll\HUD\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\J & J\Desktop\New Folder (6)\New Folder (5)\Projects\library_dll\HUD\obj\Debug\HUD.Properties.Resources.resources
+C:\Documents and Settings\J & J\Desktop\New Folder (6)\New Folder (5)\Projects\library_dll\HUD\obj\Debug\HUD.csproj.GenerateResource.Cache
+C:\Documents and Settings\J & J\Desktop\New Folder (6)\New Folder (5)\Projects\library_dll\HUD\obj\Debug\HUD.exe
+C:\Documents and Settings\J & J\Desktop\New Folder (6)\New Folder (5)\Projects\library_dll\HUD\obj\Debug\HUD.pdb
+C:\Documents and Settings\jpj5048\Desktop\Projects\library_dll\HUD\bin\Debug\HUD.exe
+C:\Documents and Settings\jpj5048\Desktop\Projects\library_dll\HUD\bin\Debug\HUD.pdb
+C:\Documents and Settings\jpj5048\Desktop\Projects\library_dll\HUD\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\jpj5048\Desktop\Projects\library_dll\HUD\obj\Debug\HUD.Properties.Resources.resources
+C:\Documents and Settings\jpj5048\Desktop\Projects\library_dll\HUD\obj\Debug\HUD.csproj.GenerateResource.Cache
+C:\Documents and Settings\jpj5048\Desktop\Projects\library_dll\HUD\obj\Debug\HUD.exe
+C:\Documents and Settings\jpj5048\Desktop\Projects\library_dll\HUD\obj\Debug\HUD.pdb
+C:\Documents and Settings\J & J\Desktop\ProjectsCar\library_dll\HUD\bin\Debug\HUD.exe
+C:\Documents and Settings\J & J\Desktop\ProjectsCar\library_dll\HUD\bin\Debug\HUD.pdb
+C:\Documents and Settings\J & J\Desktop\ProjectsCar\library_dll\HUD\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\J & J\Desktop\ProjectsCar\library_dll\HUD\obj\Debug\HUD.Properties.Resources.resources
+C:\Documents and Settings\J & J\Desktop\ProjectsCar\library_dll\HUD\obj\Debug\HUD.csproj.GenerateResource.Cache
+C:\Documents and Settings\J & J\Desktop\ProjectsCar\library_dll\HUD\obj\Debug\HUD.exe
+C:\Documents and Settings\J & J\Desktop\ProjectsCar\library_dll\HUD\obj\Debug\HUD.pdb
