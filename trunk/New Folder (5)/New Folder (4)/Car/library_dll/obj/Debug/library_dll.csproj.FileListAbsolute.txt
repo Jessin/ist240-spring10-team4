@@ -1,7 +1,0 @@
-J:\James Reale\library_dll\obj\Debug\ResolveAssemblyReference.cache
-C:\Documents and Settings\jpj5048\Desktop\Car\library_dll\obj\Debug\ResolveAssemblyReference.cache
-C:\Documents and Settings\jpj5048\Desktop\Car\library_dll\bin\Debug\library_dll.dll
-C:\Documents and Settings\jpj5048\Desktop\Car\library_dll\bin\Debug\library_dll.pdb
-C:\Documents and Settings\jpj5048\Desktop\Car\library_dll\bin\Debug\WindowsFormsApplication1.vshost.exe
-C:\Documents and Settings\jpj5048\Desktop\Car\library_dll\obj\Debug\library_dll.dll
-C:\Documents and Settings\jpj5048\Desktop\Car\library_dll\obj\Debug\library_dll.pdb

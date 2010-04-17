@@ -1,5 +1,0 @@
-C:\Documents and Settings\jpj5048\My Documents\Visual Studio 2008\Projects\MdP\Library_dll\bin\Debug\Library_dll.dll
-C:\Documents and Settings\jpj5048\My Documents\Visual Studio 2008\Projects\MdP\Library_dll\bin\Debug\Library_dll.pdb
-C:\Documents and Settings\jpj5048\My Documents\Visual Studio 2008\Projects\MdP\Library_dll\obj\Debug\ResolveAssemblyReference.cache
-C:\Documents and Settings\jpj5048\My Documents\Visual Studio 2008\Projects\MdP\Library_dll\obj\Debug\Library_dll.dll
-C:\Documents and Settings\jpj5048\My Documents\Visual Studio 2008\Projects\MdP\Library_dll\obj\Debug\Library_dll.pdb

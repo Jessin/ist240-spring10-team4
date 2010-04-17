@@ -1,4 +1,0 @@
-C:\Documents and Settings\jpj5048\Desktop\Car\WindowsFormsApplication12\WindowsFormsApplication1\obj\Debug\ResolveAssemblyReference.cache
-C:\Documents and Settings\jpj5048\Desktop\Car\WindowsFormsApplication12\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
-C:\Documents and Settings\jpj5048\Desktop\Car\WindowsFormsApplication12\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
-C:\Documents and Settings\jpj5048\Desktop\Car\WindowsFormsApplication12\WindowsFormsApplication1\obj\Debug\TestingSystem.csproj.GenerateResource.Cache
