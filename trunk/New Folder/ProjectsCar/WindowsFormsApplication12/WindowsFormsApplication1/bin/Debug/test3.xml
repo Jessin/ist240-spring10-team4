@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <lightrain>1</lightrain>
+  <heavyrain>3</heavyrain>
+  <Light>ON</Light>
+  <errorcode>1</errorcode>
+  <trafficNode>1</trafficNode>
+</document>
