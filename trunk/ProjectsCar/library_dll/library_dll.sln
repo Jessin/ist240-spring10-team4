@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "library_dll", "library_dll\library_dll.csproj", "{27EBF363-A607-4C42-ADE1-2C30538B4EFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonSys", "MonSys\MonSys.csproj", "{0D27763B-39EB-41D8-8EB0-0C261EBEFB9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingSystem", "..\WindowsFormsApplication12\WindowsFormsApplication1\TestingSystem.csproj", "{7D9AA72A-51F9-48B7-9149-905B886BF152}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HUDD", "HUD\HUDD.csproj", "{13AFE173-737E-453E-A043-85DD25E45AF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27EBF363-A607-4C42-ADE1-2C30538B4EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27EBF363-A607-4C42-ADE1-2C30538B4EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27EBF363-A607-4C42-ADE1-2C30538B4EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27EBF363-A607-4C42-ADE1-2C30538B4EFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D27763B-39EB-41D8-8EB0-0C261EBEFB9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D27763B-39EB-41D8-8EB0-0C261EBEFB9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D27763B-39EB-41D8-8EB0-0C261EBEFB9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D27763B-39EB-41D8-8EB0-0C261EBEFB9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D9AA72A-51F9-48B7-9149-905B886BF152}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D9AA72A-51F9-48B7-9149-905B886BF152}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D9AA72A-51F9-48B7-9149-905B886BF152}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D9AA72A-51F9-48B7-9149-905B886BF152}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13AFE173-737E-453E-A043-85DD25E45AF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13AFE173-737E-453E-A043-85DD25E45AF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13AFE173-737E-453E-A043-85DD25E45AF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13AFE173-737E-453E-A043-85DD25E45AF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
