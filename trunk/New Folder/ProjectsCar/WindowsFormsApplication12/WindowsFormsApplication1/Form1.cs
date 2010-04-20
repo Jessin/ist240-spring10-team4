@@ -100,7 +100,7 @@ namespace WindowsFormsApplication1
 
             tester.DirectionCode = 0;
             XmlSerializer serializer = new XmlSerializer(typeof(library_dll.Entities.TestingSystem));
-            TextWriter textWriter = new StreamWriter("tester.xml");
+            TextWriter textWriter = new StreamWriter("../../../../CarTestingInfo.xml");
             serializer.Serialize(textWriter, tester);
             textWriter.Close();
 
@@ -399,7 +399,7 @@ namespace WindowsFormsApplication1
 
 
             XmlSerializer serializer = new XmlSerializer(typeof(library_dll.Entities.TestingSystem));
-            TextWriter texterWriter = new StreamWriter("tester2.xml");
+            TextWriter texterWriter = new StreamWriter("../../../../CarTestingInfo.xml");
             serializer.Serialize(texterWriter, actualTest);
             texterWriter.Close();
 
@@ -426,6 +426,11 @@ namespace WindowsFormsApplication1
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void EXITBUTTON_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
      

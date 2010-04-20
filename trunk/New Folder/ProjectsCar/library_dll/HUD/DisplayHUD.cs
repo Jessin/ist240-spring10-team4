@@ -16,6 +16,31 @@ namespace HUD
 
     public partial class DisplayHUD : Form
     {
+        library_dll.Entities.HUD CarHud = new library_dll.Entities.HUD();
+        library_dll.Entities.TestingSystem TS = new library_dll.Entities.TestingSystem();
+
+        private void DisplayHUD_Load_1(object sender, EventArgs e)
+        {
+            library_dll.Entities.utility.Timer(1000);
+            try
+            {
+
+
+                XmlReader reader = new XmlTextReader(@"C:\Documents and Settings\J & J\Desktop\New Folder (7)\New Folder\ProjectsCar\CarTestingInfo.xml");
+                XmlSerializer serializer = new XmlSerializer(typeof(library_dll.Entities.TestingSystem));
+                TS = (library_dll.Entities.TestingSystem)serializer.Deserialize(reader);
+                CarHud.Light = TS.Light;
+                txtLights.Text = CarHud.Light;
+
+ 
+                
+            }
+            catch (FileNotFoundException ex)
+            {
+                MessageBox.Show(ex + "FILE NOT FOUND");
+            }
+
+        }
         public DisplayHUD()
         {
             InitializeComponent();
@@ -61,7 +86,8 @@ namespace HUD
 
         private void txtLights_TextChanged(object sender, EventArgs e)
         {
-
+             
+           
             //if (TestingSystem.Weather.)
             //{
             //   txtLights.Text = "ON";
@@ -110,15 +136,19 @@ namespace HUD
             //}
         }
 
-        private void DisplayHUD_Load_1(object sender, EventArgs e)
-        {
-            library_dll.Entities.TestingSystem TS = new library_dll.Entities.TestingSystem();
-            XmlReader reader = new XmlTextReader(@"C:\Documents and Settings\jpj5048\Desktop\ProjectsCar\WindowsFormsApplication12\WindowsFormsApplication1\bin\Debug\tester2.xml");
-            XmlSerializer serializer = new XmlSerializer(typeof(library_dll.Entities.TestingSystem));
-            TS = (library_dll.Entities.TestingSystem)serializer.Deserialize(reader);
-        }
+       
 
         private void boxSpeed_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Statustxt_TextChanged(object sender, EventArgs e)
         {
 
         }

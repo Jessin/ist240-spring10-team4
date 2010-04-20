@@ -40,13 +40,13 @@
             this.lblMPH = new System.Windows.Forms.Label();
             this.textSpeed = new System.Windows.Forms.TextBox();
             this.boxStatus = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.txtWipers = new System.Windows.Forms.TextBox();
             this.txtLights = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblWipers = new System.Windows.Forms.Label();
             this.btnRandom = new System.Windows.Forms.Button();
+            this.Statustxt = new System.Windows.Forms.TextBox();
             this.boxDistance.SuspendLayout();
             this.boxFuel.SuspendLayout();
             this.boxSpeed.SuspendLayout();
@@ -166,7 +166,7 @@
             // 
             // boxStatus
             // 
-            this.boxStatus.Controls.Add(this.textBox1);
+            this.boxStatus.Controls.Add(this.Statustxt);
             this.boxStatus.Controls.Add(this.txtWipers);
             this.boxStatus.Controls.Add(this.txtLights);
             this.boxStatus.Controls.Add(this.label3);
@@ -179,14 +179,6 @@
             this.boxStatus.TabIndex = 3;
             this.boxStatus.TabStop = false;
             this.boxStatus.Text = "STATUS";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(139, 108);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(54, 29);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.txtWipers_TextChanged);
             // 
             // txtWipers
             // 
@@ -213,6 +205,7 @@
             this.label3.Size = new System.Drawing.Size(105, 20);
             this.label3.TabIndex = 0;
             this.label3.Text = "Car Status: ";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -244,6 +237,14 @@
             this.btnRandom.Text = "Random";
             this.btnRandom.UseVisualStyleBackColor = true;
             this.btnRandom.Click += new System.EventHandler(this.btnRandom_Click);
+            // 
+            // Statustxt
+            // 
+            this.Statustxt.Location = new System.Drawing.Point(119, 111);
+            this.Statustxt.Name = "Statustxt";
+            this.Statustxt.Size = new System.Drawing.Size(61, 29);
+            this.Statustxt.TabIndex = 2;
+            this.Statustxt.TextChanged += new System.EventHandler(this.Statustxt_TextChanged);
             // 
             // DisplayHUD
             // 
@@ -291,8 +292,8 @@
         private System.Windows.Forms.Button btnRandom;
         private System.Windows.Forms.TextBox txtWipers;
         private System.Windows.Forms.TextBox txtLights;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox Statustxt;
     }
 }
 
