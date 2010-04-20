@@ -26,11 +26,12 @@ namespace HUD
             {
 
 
-                XmlReader reader = new XmlTextReader(@"C:\Documents and Settings\J & J\Desktop\New Folder (7)\New Folder\ProjectsCar\CarTestingInfo.xml");
+                XmlReader reader = new XmlTextReader(@"C:\Documents and Settings\J & J\Desktop\New Folder (6)\New Folder\ProjectsCar\CarTestingInfo.xml");
                 XmlSerializer serializer = new XmlSerializer(typeof(library_dll.Entities.TestingSystem));
                 TS = (library_dll.Entities.TestingSystem)serializer.Deserialize(reader);
                 CarHud.Light = TS.Light;
                 txtLights.Text = CarHud.Light;
+                reader.Close();
 
  
                 

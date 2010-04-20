@@ -207,10 +207,9 @@ namespace WindowsFormsApplication1
 
             library_dll.Entities.TestingSystem actualTest = new library_dll.Entities.TestingSystem();
             if (DayButton.Checked)
-                actualTest.Light = "ON";
-            else if (NightButton.Checked)
                 actualTest.Light = "OFF";
-            else actualTest.Light = "OFF";
+            if (NightButton.Checked)
+                actualTest.Light = "ON";
 
             if (LightRainButton.Checked)
                 actualTest.WeatherCode = TestingSystem.Weather.LightRain;

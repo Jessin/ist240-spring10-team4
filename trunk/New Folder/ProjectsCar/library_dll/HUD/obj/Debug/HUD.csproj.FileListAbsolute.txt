@@ -56,3 +56,13 @@ C:\Documents and Settings\J & J\Desktop\New Folder (7)\New Folder\ProjectsCar\li
 C:\Documents and Settings\J & J\Desktop\New Folder (7)\New Folder\ProjectsCar\library_dll\HUD\obj\Debug\HUD.DisplayHUD.resources
 C:\Documents and Settings\J & J\Desktop\New Folder (7)\New Folder\ProjectsCar\library_dll\HUD\obj\Debug\HUD.Properties.Resources.resources
 C:\Documents and Settings\J & J\Desktop\New Folder (7)\New Folder\ProjectsCar\library_dll\HUD\obj\Debug\HUD.csproj.GenerateResource.Cache
+C:\Documents and Settings\J & J\Desktop\New Folder (6)\New Folder\ProjectsCar\library_dll\HUD\obj\Debug\HUD.exe
+C:\Documents and Settings\J & J\Desktop\New Folder (6)\New Folder\ProjectsCar\library_dll\HUD\obj\Debug\HUD.pdb
+C:\Documents and Settings\J & J\Desktop\New Folder (6)\New Folder\ProjectsCar\library_dll\HUD\bin\Debug\HUD.exe
+C:\Documents and Settings\J & J\Desktop\New Folder (6)\New Folder\ProjectsCar\library_dll\HUD\bin\Debug\HUD.pdb
+C:\Documents and Settings\J & J\Desktop\New Folder (6)\New Folder\ProjectsCar\library_dll\HUD\bin\Debug\library_dll.dll
+C:\Documents and Settings\J & J\Desktop\New Folder (6)\New Folder\ProjectsCar\library_dll\HUD\bin\Debug\library_dll.pdb
+C:\Documents and Settings\J & J\Desktop\New Folder (6)\New Folder\ProjectsCar\library_dll\HUD\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\J & J\Desktop\New Folder (6)\New Folder\ProjectsCar\library_dll\HUD\obj\Debug\HUD.DisplayHUD.resources
+C:\Documents and Settings\J & J\Desktop\New Folder (6)\New Folder\ProjectsCar\library_dll\HUD\obj\Debug\HUD.Properties.Resources.resources
+C:\Documents and Settings\J & J\Desktop\New Folder (6)\New Folder\ProjectsCar\library_dll\HUD\obj\Debug\HUD.csproj.GenerateResource.Cache
