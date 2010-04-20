@@ -4,9 +4,30 @@ using System.Linq;
 using System.Text;
 using System.IO;
 using System.Timers;
+using System.Xml.Serialization;
+using System.Xml;
+using HUD;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 namespace library_dll.Entities
 {
+
+
+
     public class utility 
     {
         static String filename;
@@ -38,24 +59,26 @@ namespace library_dll.Entities
 
         public static void LogFile(string strLogText)
         {
-            StreamWriter log;
+            //StreamWriter log;
 
-            if (!File.Exists("logfile.txt"))
-            {
-                log = new StreamWriter("logfile.txt");
-            }
-            else
-            {
-                log = File.AppendText("logfile.txt");
-            }
+            //if (!File.Exists("logfile.txt"))
+            //{
+            //    log = new StreamWriter("logfile.txt");
+            //}
+            //else
+            //{
+            //    log = File.AppendText("logfile.txt");
+            //}
 
-            // Write to the file:
-            log.WriteLine(DateTime.Now);
-            log.WriteLine(strLogText);
-            log.WriteLine();
+            //// Write to the file:
+            //log.WriteLine(DateTime.Now);
+            //log.WriteLine(strLogText);
+            //log.WriteLine();
 
-            // Close the stream:
-            log.Close();
+            //// Close the stream:
+            //log.Close();
+
+
 
         }
 
@@ -64,13 +87,20 @@ namespace library_dll.Entities
             //5000 would be 5 seconds
             Timer myTimer = new Timer(TimeToWait);
             myTimer.Elapsed += new ElapsedEventHandler(ElapsedEvent);
-            myTimer.Enabled = true;            
+            myTimer.Enabled = true;     
+       
 
         }
 
         public static void ElapsedEvent(object source, ElapsedEventArgs e)
         {
-            utility.LogFile("Hello World!");
+          
+            //utility.LogFile("Hello World!");
+            HUD.Program.targetreader();
+            
+ 
+           
+            
         }
 
         public static int RandomNumber(int min, int max)
@@ -99,5 +129,6 @@ namespace library_dll.Entities
 
     }
 }
+
 
     

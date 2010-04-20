@@ -10,36 +10,49 @@ using library_dll.Entities;
 using System.IO;
 using System.Xml.Serialization;
 using System.Xml;
+using System.Timers;
+
+
 
 namespace HUD
 {
 
     public partial class DisplayHUD : Form
     {
-        library_dll.Entities.HUD CarHud = new library_dll.Entities.HUD();
-        library_dll.Entities.TestingSystem TS = new library_dll.Entities.TestingSystem();
+        
+        
+        
 
-        private void DisplayHUD_Load_1(object sender, EventArgs e)
+        public static void readAgian()
         {
-            library_dll.Entities.utility.Timer(1000);
             try
             {
-
-
-                XmlReader reader = new XmlTextReader(@"C:\Documents and Settings\J & J\Desktop\New Folder (6)\New Folder\ProjectsCar\CarTestingInfo.xml");
+                library_dll.Entities.HUDD CarHud = new library_dll.Entities.HUDD();
+                library_dll.Entities.TestingSystem TS = new library_dll.Entities.TestingSystem();
+                XmlReader reader = new XmlTextReader(@"C:\Documents and Settings\jpj5048\Desktop\New Folder\New Folder\ProjectsCar\CarTestingInfo.xml");
                 XmlSerializer serializer = new XmlSerializer(typeof(library_dll.Entities.TestingSystem));
                 TS = (library_dll.Entities.TestingSystem)serializer.Deserialize(reader);
                 CarHud.Light = TS.Light;
-                txtLights.Text = CarHud.Light;
+                
+                
+                MessageBox.Show(TS.Light);
+                //int currentdirection = Convert.ToInt16(TS.DirectionCode);
+                //MessageBox.Show(Convert.ToString(currentdirection));
                 reader.Close();
 
- 
-                
+
+
             }
             catch (FileNotFoundException ex)
             {
                 MessageBox.Show(ex + "FILE NOT FOUND");
             }
+        }
+
+        private void DisplayHUD_Load_1(object sender, EventArgs e)
+        {
+            library_dll.Entities.utility.Timer(1000);
+            
 
         }
         public DisplayHUD()
@@ -153,5 +166,8 @@ namespace HUD
         {
 
         }
+
+        }
+
+
     }
-}

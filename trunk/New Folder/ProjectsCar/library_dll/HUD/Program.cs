@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace HUD
 {
-    static class Program
+    public static class Program
     {
         /// <summary>
         /// The main entry point for the application.
@@ -17,5 +17,13 @@ namespace HUD
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new DisplayHUD());
         }
+
+        public static void targetreader()
+    {
+        HUD.DisplayHUD.readAgian();
+ 
+
+    }
+
     }
 }

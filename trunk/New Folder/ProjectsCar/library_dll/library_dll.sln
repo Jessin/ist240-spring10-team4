@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonSys", "MonSys\MonSys.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingSystem", "..\WindowsFormsApplication12\WindowsFormsApplication1\TestingSystem.csproj", "{7D9AA72A-51F9-48B7-9149-905B886BF152}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HUD", "HUD\HUD.csproj", "{13AFE173-737E-453E-A043-85DD25E45AF1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HUDD", "HUD\HUDD.csproj", "{13AFE173-737E-453E-A043-85DD25E45AF1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

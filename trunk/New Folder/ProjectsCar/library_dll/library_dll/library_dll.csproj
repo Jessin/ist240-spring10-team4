@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{27EBF363-A607-4C42-ADE1-2C30538B4EFD}</ProjectGuid>
     <OutputType>Library</OutputType>
@@ -31,6 +31,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HUD, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HUD\bin\Debug\HUD.exe</HintPath>
+    </Reference>
+    <Reference Include="HUD.vshost, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HUD\bin\Debug\HUD.vshost.exe</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -47,7 +55,7 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Entities\Equipment.cs" />
-    <Compile Include="Entities\HUD.cs" />
+    <Compile Include="Entities\HUDD.cs" />
     <Compile Include="Entities\MONSystem.cs" />
     <Compile Include="Entities\System.cs" />
     <Compile Include="Entities\TestingSystem.cs" />
