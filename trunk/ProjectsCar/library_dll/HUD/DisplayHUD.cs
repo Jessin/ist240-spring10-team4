@@ -54,12 +54,43 @@ namespace HUD
             {
                 library_dll.Entities.HUDD CarHud = new library_dll.Entities.HUDD();
                 library_dll.Entities.TestingSystem TS = new library_dll.Entities.TestingSystem();
-                XmlReader reader = new XmlTextReader(@"C:\Documents and Settings\jpj5048\Desktop\New Folder (2)\New Folder\ProjectsCar\CarTestingInfo.xml");
+                XmlReader reader = new XmlTextReader(@"C:\Documents and Settings\jvr5013\Desktop\New Folder\ProjectsCar\CarTestingInfo.xml");
                 XmlSerializer serializer = new XmlSerializer(typeof(library_dll.Entities.TestingSystem));
                 TS = (library_dll.Entities.TestingSystem)serializer.Deserialize(reader);
                 CarHud.Light = TS.Light;
                 txtLights.Text = CarHud.Light;
-                Statustxt.Text = Convert.ToString(TS.ErrorCode);
+                int testcode = Convert.ToInt16(TS.ErrorCode);
+                int trafficcode = Convert.ToInt16(TS.TrafficCode);
+                if (trafficcode == 1)
+                    textSpeed.Text = "65";
+                if (trafficcode == 2)
+                    textSpeed.Text = "45";
+                if (trafficcode == 3)
+                    textSpeed.Text = "30";
+                if (trafficcode == 4)
+                    textSpeed.Text = "10";
+
+                int Weather = Convert.ToInt16(TS.WeatherCode);
+                if (Weather == 0)
+                    txtWipers.Text = "OFF";
+                if (Weather == 1)
+                    txtWipers.Text = "ON";
+                if (Weather == 2)
+                    txtWipers.Text = "ON";
+                if (Weather == 3)
+                    txtWipers.Text = "ON";
+                if (Weather == 4)
+                    txtWipers.Text = "ON";
+
+                int light = Convert.ToInt16(TS.Light);
+                if (light == 0)
+                    (light.Text = "
+
+
+
+
+                
+                Statustxt.Text = Convert.ToString(testcode);
                 
 
 
@@ -106,7 +137,7 @@ namespace HUD
 
         private void textSpeed_TextChanged(object sender, EventArgs e)
         {
- 
+           
         }
 
         private void txtDistance_TextChanged(object sender, EventArgs e)
@@ -189,6 +220,11 @@ namespace HUD
         private void Statustxt_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         }
