@@ -83,3 +83,11 @@ C:\Documents and Settings\jvr5013\Desktop\New Folder\ProjectsCar\library_dll\Mon
 C:\Documents and Settings\jvr5013\Desktop\New Folder\ProjectsCar\library_dll\MonSys\obj\Debug\MonSys.csproj.GenerateResource.Cache
 C:\Documents and Settings\jvr5013\Desktop\New Folder\ProjectsCar\library_dll\MonSys\obj\Debug\MonSys.exe
 C:\Documents and Settings\jvr5013\Desktop\New Folder\ProjectsCar\library_dll\MonSys\obj\Debug\MonSys.pdb
+C:\Documents and Settings\J & J\Desktop\New Folder (8)\ProjectsCar\library_dll\MonSys\bin\Debug\MonSys.exe
+C:\Documents and Settings\J & J\Desktop\New Folder (8)\ProjectsCar\library_dll\MonSys\bin\Debug\MonSys.pdb
+C:\Documents and Settings\J & J\Desktop\New Folder (8)\ProjectsCar\library_dll\MonSys\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\J & J\Desktop\New Folder (8)\ProjectsCar\library_dll\MonSys\obj\Debug\MonSys.Form1.resources
+C:\Documents and Settings\J & J\Desktop\New Folder (8)\ProjectsCar\library_dll\MonSys\obj\Debug\MonSys.Properties.Resources.resources
+C:\Documents and Settings\J & J\Desktop\New Folder (8)\ProjectsCar\library_dll\MonSys\obj\Debug\MonSys.csproj.GenerateResource.Cache
+C:\Documents and Settings\J & J\Desktop\New Folder (8)\ProjectsCar\library_dll\MonSys\obj\Debug\MonSys.exe
+C:\Documents and Settings\J & J\Desktop\New Folder (8)\ProjectsCar\library_dll\MonSys\obj\Debug\MonSys.pdb

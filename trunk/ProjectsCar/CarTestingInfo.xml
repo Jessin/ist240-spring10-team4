@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TestingSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <DirectionCode>SouthWest</DirectionCode>
-  <TrafficCode>Free</TrafficCode>
-  <ErrorCode>OverHeat</ErrorCode>
-  <Light>ON</Light>
-  <WeatherCode>LightSnow</WeatherCode>
+  <DirectionCode>SouthEast</DirectionCode>
+  <TrafficCode>HeavyTraffic</TrafficCode>
+  <ErrorCode>FrontLeftWheel</ErrorCode>
+  <Light>OFF</Light>
+  <WeatherCode>LightRain</WeatherCode>
 </TestingSystem>

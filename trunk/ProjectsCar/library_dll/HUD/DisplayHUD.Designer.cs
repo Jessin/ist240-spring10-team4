@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.boxDistance = new System.Windows.Forms.GroupBox();
             this.lblMiles = new System.Windows.Forms.Label();
@@ -39,13 +40,14 @@
             this.lblMPH = new System.Windows.Forms.Label();
             this.textSpeed = new System.Windows.Forms.TextBox();
             this.boxStatus = new System.Windows.Forms.GroupBox();
-            this.Statustxt = new System.Windows.Forms.TextBox();
             this.txtWipers = new System.Windows.Forms.TextBox();
             this.txtLights = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblWipers = new System.Windows.Forms.Label();
+            this.Statustxt = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.boxDistance.SuspendLayout();
             this.boxFuel.SuspendLayout();
             this.boxSpeed.SuspendLayout();
@@ -169,15 +171,6 @@
             this.boxStatus.TabStop = false;
             this.boxStatus.Text = "STATUS";
             // 
-            // Statustxt
-            // 
-            this.Statustxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Statustxt.Location = new System.Drawing.Point(125, 272);
-            this.Statustxt.Name = "Statustxt";
-            this.Statustxt.Size = new System.Drawing.Size(190, 26);
-            this.Statustxt.TabIndex = 2;
-            this.Statustxt.TextChanged += new System.EventHandler(this.Statustxt_TextChanged);
-            // 
             // txtWipers
             // 
             this.txtWipers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -195,17 +188,6 @@
             this.txtLights.Size = new System.Drawing.Size(54, 26);
             this.txtLights.TabIndex = 1;
             this.txtLights.TextChanged += new System.EventHandler(this.txtLights_TextChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 278);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 20);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Car Status: ";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -227,6 +209,26 @@
             this.lblWipers.TabIndex = 0;
             this.lblWipers.Text = "Wipers";
             // 
+            // Statustxt
+            // 
+            this.Statustxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Statustxt.Location = new System.Drawing.Point(125, 272);
+            this.Statustxt.Name = "Statustxt";
+            this.Statustxt.Size = new System.Drawing.Size(190, 26);
+            this.Statustxt.TabIndex = 2;
+            this.Statustxt.TextChanged += new System.EventHandler(this.Statustxt_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(21, 278);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(105, 20);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Car Status: ";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
             // btnExit
             // 
             this.btnExit.Location = new System.Drawing.Point(350, 272);
@@ -236,6 +238,10 @@
             this.btnExit.Text = "EXIT";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // DisplayHUD
             // 
@@ -286,6 +292,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox Statustxt;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

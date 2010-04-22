@@ -14,6 +14,7 @@ using System.IO;
 
 
 
+
 namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
@@ -34,80 +35,7 @@ namespace WindowsFormsApplication1
 
             // start region
 
-            #region  defaltxml
-
-            #region normalxml
-
-            //XmlDocument doc = new XmlDocument();
-
-           // //Using the object create the XML declaration object 
-           // XmlNode docNode = doc.CreateXmlDeclaration("1.0", "UTF-8", null);
-           // //Append the XML declaration to the doc object 
-           // doc.AppendChild(docNode);
-           // //<?xml version="1.0" encoding="UTF-8"?> 
-
-           // XmlNode documentNode = doc.CreateElement("document");
-           // doc.AppendChild(documentNode);
-
-           // XmlNode speedNode = doc.CreateElement("speed");
-           // speedNode.AppendChild(doc.CreateTextNode("40"));
-
-           // /*XmlAttribute speedAttribute = doc.CreateAttribute("Type");
-           // speedAttribute.Value = "Speed";
-           // speedNode.Attributes.Append(speedAttribute); */
-           // documentNode.AppendChild(speedNode);
-            
-           // XmlNode directionNode = doc.CreateElement("direction");
-           // directionNode.AppendChild(doc.CreateTextNode("North"));
-
-           // /*XmlAttribute directionAttribute = doc.CreateAttribute("Type");
-           // directionAttribute.Value = "direction";
-           // directionNode.Attributes.Append(directionAttribute);*/
-           // documentNode.AppendChild(directionNode);
-
-           // XmlNode distanceNode = doc.CreateElement("distance");
-           // distanceNode.AppendChild(doc.CreateTextNode("500"));
-
-           ///* XmlAttribute distanceAttribute = doc.CreateAttribute("Type");
-           // distanceAttribute.Value = "distance";
-           // distanceNode.Attributes.Append(distanceAttribute);*/
-           // documentNode.AppendChild(distanceNode);
-
-           // XmlNode wiperspeedNode = doc.CreateElement("wiperspeed");
-           // wiperspeedNode.AppendChild(doc.CreateTextNode("0"));
-
-           // /*XmlAttribute wiperspeedAttribute = doc.CreateAttribute("Type");
-           // wiperspeedAttribute.Value = "wiperspeed";
-           // wiperspeedNode.Attributes.Append(wiperspeedAttribute);*/
-           // documentNode.AppendChild(wiperspeedNode);
-
-           // XmlNode lightNode = doc.CreateElement("light");
-           // lightNode.AppendChild(doc.CreateTextNode("OFF"));
-
-           ///* XmlAttribute lightAttribute = doc.CreateAttribute("light");
-           // lightAttribute.Value = "light";
-           // lightNode.Attributes.Append(lightAttribute);*/
-           // documentNode.AppendChild(lightNode);
-
-           // doc.Save("test4.xml"); 
-#endregion 
-
-            library_dll.Entities.TestingSystem tester = new library_dll.Entities.TestingSystem();
-            tester.Light = "OFF";
-            tester.WeatherCode = library_dll.Entities.TestingSystem.Weather.Clear;
-            tester.ErrorCode = library_dll.Entities.TestingSystem.CarProblem.NoIssues;
-            tester.TrafficCode = library_dll.Entities.TestingSystem.Traffic.Free;
-
-            tester.DirectionCode = 0;
-            XmlSerializer serializer = new XmlSerializer(typeof(library_dll.Entities.TestingSystem));
-            TextWriter textWriter = new StreamWriter("../../../../CarTestingInfo.xml");
-            serializer.Serialize(textWriter, tester);
-            textWriter.Close();
-
-
-
-
-            #endregion
+           
 
         }
         #region buttons
@@ -211,7 +139,9 @@ namespace WindowsFormsApplication1
             if (NightButton.Checked)
                 actualTest.Light = "ON";
 
-            if (LightRainButton.Checked)
+            if (ClearButton1.Checked)
+                actualTest.WeatherCode = TestingSystem.Weather.Clear;
+            else if (LightRainButton.Checked)
                 actualTest.WeatherCode = TestingSystem.Weather.LightRain;
             else if (LightSnowButton.Checked)
                 actualTest.WeatherCode = TestingSystem.Weather.LightSnow;
@@ -245,7 +175,7 @@ namespace WindowsFormsApplication1
                 actualTest.TrafficCode = TestingSystem.Traffic.LightTraffic;
             else if (MediumTraffButton.Checked)
                 actualTest.TrafficCode = TestingSystem.Traffic.MediumTraffic;
-            else if (HeavyRainButton.Checked)
+            else if (HeavyTraffButton.Checked)
                 actualTest.TrafficCode = TestingSystem.Traffic.HeavyTraffic;
 
             
@@ -424,12 +354,96 @@ namespace WindowsFormsApplication1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            #region  defaltxml
 
+            #region normalxml
+
+            //XmlDocument doc = new XmlDocument();
+
+            // //Using the object create the XML declaration object 
+            // XmlNode docNode = doc.CreateXmlDeclaration("1.0", "UTF-8", null);
+            // //Append the XML declaration to the doc object 
+            // doc.AppendChild(docNode);
+            // //<?xml version="1.0" encoding="UTF-8"?> 
+
+            // XmlNode documentNode = doc.CreateElement("document");
+            // doc.AppendChild(documentNode);
+
+            // XmlNode speedNode = doc.CreateElement("speed");
+            // speedNode.AppendChild(doc.CreateTextNode("40"));
+
+            // /*XmlAttribute speedAttribute = doc.CreateAttribute("Type");
+            // speedAttribute.Value = "Speed";
+            // speedNode.Attributes.Append(speedAttribute); */
+            // documentNode.AppendChild(speedNode);
+
+            // XmlNode directionNode = doc.CreateElement("direction");
+            // directionNode.AppendChild(doc.CreateTextNode("North"));
+
+            // /*XmlAttribute directionAttribute = doc.CreateAttribute("Type");
+            // directionAttribute.Value = "direction";
+            // directionNode.Attributes.Append(directionAttribute);*/
+            // documentNode.AppendChild(directionNode);
+
+            // XmlNode distanceNode = doc.CreateElement("distance");
+            // distanceNode.AppendChild(doc.CreateTextNode("500"));
+
+            ///* XmlAttribute distanceAttribute = doc.CreateAttribute("Type");
+            // distanceAttribute.Value = "distance";
+            // distanceNode.Attributes.Append(distanceAttribute);*/
+            // documentNode.AppendChild(distanceNode);
+
+            // XmlNode wiperspeedNode = doc.CreateElement("wiperspeed");
+            // wiperspeedNode.AppendChild(doc.CreateTextNode("0"));
+
+            // /*XmlAttribute wiperspeedAttribute = doc.CreateAttribute("Type");
+            // wiperspeedAttribute.Value = "wiperspeed";
+            // wiperspeedNode.Attributes.Append(wiperspeedAttribute);*/
+            // documentNode.AppendChild(wiperspeedNode);
+
+            // XmlNode lightNode = doc.CreateElement("light");
+            // lightNode.AppendChild(doc.CreateTextNode("OFF"));
+
+            ///* XmlAttribute lightAttribute = doc.CreateAttribute("light");
+            // lightAttribute.Value = "light";
+            // lightNode.Attributes.Append(lightAttribute);*/
+            // documentNode.AppendChild(lightNode);
+
+            // doc.Save("test4.xml"); 
+            #endregion
+
+            library_dll.Entities.TestingSystem tester = new library_dll.Entities.TestingSystem();
+            tester.Light = "OFF";
+            tester.WeatherCode = library_dll.Entities.TestingSystem.Weather.Clear;
+            tester.ErrorCode = library_dll.Entities.TestingSystem.CarProblem.NoIssues;
+            tester.TrafficCode = library_dll.Entities.TestingSystem.Traffic.Free;
+            
+
+            tester.DirectionCode = library_dll.Entities.TestingSystem.Direction.North;
+            XmlSerializer serializer = new XmlSerializer(typeof(library_dll.Entities.TestingSystem));
+            TextWriter textWriter = new StreamWriter("../../../../CarTestingInfo.xml");
+            serializer.Serialize(textWriter, tester);
+            textWriter.Close();
+
+
+
+
+            #endregion
         }
 
         private void EXITBUTTON_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void ClearButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HeavyTraffButton_CheckedChanged_1(object sender, EventArgs e)
+        {
+
         }
 
      

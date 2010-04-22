@@ -51,8 +51,8 @@
             this.MediumTraffButton = new System.Windows.Forms.RadioButton();
             this.LightTraffButton = new System.Windows.Forms.RadioButton();
             this.NoTraffButton = new System.Windows.Forms.RadioButton();
-            this.StartButton = new System.Windows.Forms.Button();
             this.EXITBUTTON = new System.Windows.Forms.Button();
+            this.ClearButton1 = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -61,7 +61,7 @@
             // 
             // TestButton
             // 
-            this.TestButton.Location = new System.Drawing.Point(198, 275);
+            this.TestButton.Location = new System.Drawing.Point(101, 275);
             this.TestButton.Name = "TestButton";
             this.TestButton.Size = new System.Drawing.Size(122, 45);
             this.TestButton.TabIndex = 0;
@@ -80,13 +80,14 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.ClearButton1);
             this.groupBox1.Controls.Add(this.HeavySnowButton);
             this.groupBox1.Controls.Add(this.HeavyRainButton);
             this.groupBox1.Controls.Add(this.LightSnowButton);
             this.groupBox1.Controls.Add(this.LightRainButton);
-            this.groupBox1.Location = new System.Drawing.Point(102, 116);
+            this.groupBox1.Location = new System.Drawing.Point(105, 105);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(132, 124);
+            this.groupBox1.Size = new System.Drawing.Size(138, 135);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Weather";
@@ -94,7 +95,7 @@
             // HeavySnowButton
             // 
             this.HeavySnowButton.AutoSize = true;
-            this.HeavySnowButton.Location = new System.Drawing.Point(7, 101);
+            this.HeavySnowButton.Location = new System.Drawing.Point(7, 108);
             this.HeavySnowButton.Name = "HeavySnowButton";
             this.HeavySnowButton.Size = new System.Drawing.Size(83, 17);
             this.HeavySnowButton.TabIndex = 3;
@@ -106,7 +107,7 @@
             // HeavyRainButton
             // 
             this.HeavyRainButton.AutoSize = true;
-            this.HeavyRainButton.Location = new System.Drawing.Point(7, 78);
+            this.HeavyRainButton.Location = new System.Drawing.Point(7, 84);
             this.HeavyRainButton.Name = "HeavyRainButton";
             this.HeavyRainButton.Size = new System.Drawing.Size(78, 17);
             this.HeavyRainButton.TabIndex = 2;
@@ -118,7 +119,7 @@
             // LightSnowButton
             // 
             this.LightSnowButton.AutoSize = true;
-            this.LightSnowButton.Location = new System.Drawing.Point(7, 54);
+            this.LightSnowButton.Location = new System.Drawing.Point(7, 60);
             this.LightSnowButton.Name = "LightSnowButton";
             this.LightSnowButton.Size = new System.Drawing.Size(75, 17);
             this.LightSnowButton.TabIndex = 1;
@@ -130,7 +131,7 @@
             // LightRainButton
             // 
             this.LightRainButton.AutoSize = true;
-            this.LightRainButton.Location = new System.Drawing.Point(7, 30);
+            this.LightRainButton.Location = new System.Drawing.Point(7, 37);
             this.LightRainButton.Name = "LightRainButton";
             this.LightRainButton.Size = new System.Drawing.Size(70, 17);
             this.LightRainButton.TabIndex = 0;
@@ -145,9 +146,9 @@
             this.groupBox2.Controls.Add(this.TPressureButton);
             this.groupBox2.Controls.Add(this.WFluidButton);
             this.groupBox2.Controls.Add(this.OHeatButton);
-            this.groupBox2.Location = new System.Drawing.Point(242, 116);
+            this.groupBox2.Location = new System.Drawing.Point(249, 105);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(141, 124);
+            this.groupBox2.Size = new System.Drawing.Size(148, 135);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Car";
@@ -222,9 +223,9 @@
             // 
             this.groupBox3.Controls.Add(this.NightButton);
             this.groupBox3.Controls.Add(this.DayButton);
-            this.groupBox3.Location = new System.Drawing.Point(13, 116);
+            this.groupBox3.Location = new System.Drawing.Point(9, 105);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(83, 124);
+            this.groupBox3.Size = new System.Drawing.Size(90, 135);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "SunLight";
@@ -268,9 +269,9 @@
             this.groupBox4.Controls.Add(this.MediumTraffButton);
             this.groupBox4.Controls.Add(this.LightTraffButton);
             this.groupBox4.Controls.Add(this.NoTraffButton);
-            this.groupBox4.Location = new System.Drawing.Point(389, 116);
+            this.groupBox4.Location = new System.Drawing.Point(403, 105);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(136, 124);
+            this.groupBox4.Size = new System.Drawing.Size(139, 135);
             this.groupBox4.TabIndex = 8;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Traffic";
@@ -285,6 +286,7 @@
             this.HeavyTraffButton.TabStop = true;
             this.HeavyTraffButton.Text = "Heavy";
             this.HeavyTraffButton.UseVisualStyleBackColor = true;
+            this.HeavyTraffButton.CheckedChanged += new System.EventHandler(this.HeavyTraffButton_CheckedChanged_1);
             // 
             // MediumTraffButton
             // 
@@ -320,19 +322,9 @@
             this.NoTraffButton.UseVisualStyleBackColor = true;
             this.NoTraffButton.CheckedChanged += new System.EventHandler(this.NoTraffButton_CheckedChanged_1);
             // 
-            // StartButton
-            // 
-            this.StartButton.Location = new System.Drawing.Point(30, 275);
-            this.StartButton.Name = "StartButton";
-            this.StartButton.Size = new System.Drawing.Size(119, 45);
-            this.StartButton.TabIndex = 9;
-            this.StartButton.Text = "START";
-            this.StartButton.UseVisualStyleBackColor = true;
-            this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
-            // 
             // EXITBUTTON
             // 
-            this.EXITBUTTON.Location = new System.Drawing.Point(389, 275);
+            this.EXITBUTTON.Location = new System.Drawing.Point(278, 275);
             this.EXITBUTTON.Name = "EXITBUTTON";
             this.EXITBUTTON.Size = new System.Drawing.Size(109, 45);
             this.EXITBUTTON.TabIndex = 10;
@@ -340,13 +332,24 @@
             this.EXITBUTTON.UseVisualStyleBackColor = true;
             this.EXITBUTTON.Click += new System.EventHandler(this.EXITBUTTON_Click_1);
             // 
+            // ClearButton1
+            // 
+            this.ClearButton1.AutoSize = true;
+            this.ClearButton1.Location = new System.Drawing.Point(7, 16);
+            this.ClearButton1.Name = "ClearButton1";
+            this.ClearButton1.Size = new System.Drawing.Size(49, 17);
+            this.ClearButton1.TabIndex = 4;
+            this.ClearButton1.TabStop = true;
+            this.ClearButton1.Text = "Clear";
+            this.ClearButton1.UseVisualStyleBackColor = true;
+            this.ClearButton1.CheckedChanged += new System.EventHandler(this.ClearButton1_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(554, 365);
             this.Controls.Add(this.EXITBUTTON);
-            this.Controls.Add(this.StartButton);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox3);
@@ -395,10 +398,10 @@
         private System.Windows.Forms.RadioButton MediumTraffButton;
         private System.Windows.Forms.RadioButton LightTraffButton;
         private System.Windows.Forms.RadioButton NoTraffButton;
-        private System.Windows.Forms.Button StartButton;
         private System.Windows.Forms.RadioButton HeavySnowButton;
         private System.Windows.Forms.RadioButton HeavyRainButton;
         private System.Windows.Forms.Button EXITBUTTON;
+        private System.Windows.Forms.RadioButton ClearButton1;
     }
 }
 

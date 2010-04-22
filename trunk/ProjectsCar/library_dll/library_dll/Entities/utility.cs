@@ -11,6 +11,10 @@ using HUD;
 
 
 
+
+
+
+
 namespace library_dll.Entities
 {
 
@@ -20,32 +24,35 @@ namespace library_dll.Entities
     {
         static String filename;
 
+       
+        public static int Weather;
+
         public static String Filename
         {
             get { return utility.filename; }
             set { utility.filename = value; }
         }
-        public static bool DeleteFile(string fileToDelete)
-        {
-            try
-            {
-                if (File.Exists(filename))
-                {
-                    File.Delete(filename);
-                    return true;
-                }
-                else
-                    return true;
-            }
-            catch (Exception ex)
-            {
-                // Log the exception
-                utility.LogFile(ex.ToString());
-                return false;
-            }
-        }
+        //public static bool DeleteFile(string fileToDelete)
+        //{
+        //    //try
+        //    //{
+        //    //    if (File.Exists(filename))
+        //    //    {
+        //    //        File.Delete(filename);
+        //    //        return true;
+        //    //    }
+        //    //    else
+        //    //        return true;
+        //    //}
+        //    //catch (Exception ex)
+        //    //{
+        //    //    // Log the exception
+        //    //    utility.LogFile(ex.ToString());
+        //    //    return false;
+        //    //}
+        //}
 
-        public static void LogFile(string strLogText)
+        public static void LogFile()
         {
             //StreamWriter log;
 
@@ -65,6 +72,41 @@ namespace library_dll.Entities
 
             //// Close the stream:
             //log.Close();
+            try
+            {
+                library_dll.Entities.TestingSystem TSX = new library_dll.Entities.TestingSystem();
+                XmlReader reader = new XmlTextReader(@"C:\Documents and Settings\J & J\Desktop\New Folder (8)\ProjectsCar/CarTestingInfo.xml");
+                XmlSerializer serializer = new XmlSerializer(typeof(library_dll.Entities.TestingSystem));
+                TSX = (library_dll.Entities.TestingSystem)serializer.Deserialize(reader);
+                HUD.DisplayHUD.CarHud.Light = TSX.Light;
+                 Weather = Convert.ToInt16(TSX.WeatherCode);
+                 HUD.DisplayHUD.CarErrorCode = Convert.ToInt16(TSX.ErrorCode);
+                 
+                
+                
+                //HUD.DisplayHUD.CarHud.ErrorCode = TSX.ErrorCode;
+                //HUD.DisplayHUD.CarHud.DirectionCode = TSX.DirectionCode;
+                //HUD.DisplayHUD.CarHud.WeatherCode = TSX.WeatherCode;
+                HUD.DisplayHUD.trafficcode = Convert.ToInt16(TSX.TrafficCode);
+                
+
+
+
+
+
+                //int currentdirection = Convert.ToInt16(TS.DirectionCode);
+                //MessageBox.Show(Convert.ToString(currentdirection));
+
+
+                reader.Close();
+
+
+
+            }
+            catch (FileNotFoundException ex)
+            {
+                Console.Out.WriteLine("File Not found" + ex);
+            }
 
 
 
@@ -75,16 +117,21 @@ namespace library_dll.Entities
             //5000 would be 5 seconds
             Timer myTimer = new Timer(TimeToWait);
             myTimer.Elapsed += new ElapsedEventHandler(ElapsedEvent);
-            myTimer.Enabled = true;     
+            myTimer.Enabled = true;
+
+            
        
 
         }
 
         public static void ElapsedEvent(object source, ElapsedEventArgs e)
         {
-          
-            //utility.LogFile("Hello World!");
+
+            utility.LogFile();
             //HUD.Program.targetreader();
+            
+
+           
 
            
             
