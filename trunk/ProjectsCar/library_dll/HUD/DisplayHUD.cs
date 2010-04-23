@@ -160,15 +160,7 @@ namespace HUD
 
         private void txtDistance_TextChanged(object sender, EventArgs e)
         {
-            double dist;
-            dist =+ 1;
-            //Talk to Joe about how to increment using time
-            txtDistance.Text = Convert.ToString(dist);
-        }
-        private void btnRandom_Click(object sender, EventArgs e)
-        {
-            int returnSpeed = utility.RandomNumber(5, 100);
-            textSpeed.Text = Convert.ToString(returnSpeed);
+
         }
 
         private void txtLights_TextChanged(object sender, EventArgs e)
@@ -254,20 +246,42 @@ namespace HUD
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            
+            double fuel = 20.5;
+            double resultFuel;
+            resultFuel = --fuel;
+            textFuel.Text = Convert.ToString(resultFuel);
 
+            int dist = 34567;
+            int resultDist;
+            resultDist = ++dist;
+            //Talk to Joe about how to increment using time
+            txtDistance.Text = Convert.ToString(resultDist);
+            
             if (utility.Weather == 0)
                 txtWipers.Text = "OFF";
             if (utility.Weather == 1)
-                txtWipers.Text = "ON";
+                txtWipers.Text = "LOW";
             if (utility.Weather == 2)
-                txtWipers.Text = "ON";
+                txtWipers.Text = "LOW";
             if (utility.Weather == 3)
-                txtWipers.Text = "ON";
+                txtWipers.Text = "HIGH";
             if (utility.Weather == 4)
-                txtWipers.Text = "ON";
+                txtWipers.Text = "HIGH";
            
             txtLights.Text = CarHud.Light;
             Statustxt.Text = Convert.ToString(CarErrorCode);
+            if (CarErrorCode == 0)
+                Statustxt.Text = "NI";
+            if (CarErrorCode == 1)
+                Statustxt.Text = "EOH";
+            if (CarErrorCode == 2)
+                Statustxt.Text = "LWF";
+            if (CarErrorCode == 3)
+                Statustxt.Text = "Oil";
+            if (CarErrorCode == 4)
+                Statustxt.Text = "TireP";
+
 
                if (trafficcode == 1)
                    textSpeed.Text = "65";
