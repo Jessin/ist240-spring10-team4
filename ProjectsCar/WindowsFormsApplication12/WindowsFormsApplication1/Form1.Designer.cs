@@ -31,6 +31,7 @@
             this.TestButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ClearButton1 = new System.Windows.Forms.RadioButton();
             this.HeavySnowButton = new System.Windows.Forms.RadioButton();
             this.HeavyRainButton = new System.Windows.Forms.RadioButton();
             this.LightSnowButton = new System.Windows.Forms.RadioButton();
@@ -52,7 +53,6 @@
             this.LightTraffButton = new System.Windows.Forms.RadioButton();
             this.NoTraffButton = new System.Windows.Forms.RadioButton();
             this.EXITBUTTON = new System.Windows.Forms.Button();
-            this.ClearButton1 = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -91,6 +91,18 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Weather";
+            // 
+            // ClearButton1
+            // 
+            this.ClearButton1.AutoSize = true;
+            this.ClearButton1.Location = new System.Drawing.Point(7, 16);
+            this.ClearButton1.Name = "ClearButton1";
+            this.ClearButton1.Size = new System.Drawing.Size(49, 17);
+            this.ClearButton1.TabIndex = 4;
+            this.ClearButton1.TabStop = true;
+            this.ClearButton1.Text = "Clear";
+            this.ClearButton1.UseVisualStyleBackColor = true;
+            this.ClearButton1.CheckedChanged += new System.EventHandler(this.ClearButton1_CheckedChanged);
             // 
             // HeavySnowButton
             // 
@@ -332,18 +344,6 @@
             this.EXITBUTTON.UseVisualStyleBackColor = true;
             this.EXITBUTTON.Click += new System.EventHandler(this.EXITBUTTON_Click_1);
             // 
-            // ClearButton1
-            // 
-            this.ClearButton1.AutoSize = true;
-            this.ClearButton1.Location = new System.Drawing.Point(7, 16);
-            this.ClearButton1.Name = "ClearButton1";
-            this.ClearButton1.Size = new System.Drawing.Size(49, 17);
-            this.ClearButton1.TabIndex = 4;
-            this.ClearButton1.TabStop = true;
-            this.ClearButton1.Text = "Clear";
-            this.ClearButton1.UseVisualStyleBackColor = true;
-            this.ClearButton1.CheckedChanged += new System.EventHandler(this.ClearButton1_CheckedChanged);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -360,7 +360,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TestButton);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "TestingSystem";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
