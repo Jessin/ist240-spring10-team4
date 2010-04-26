@@ -23,6 +23,8 @@ namespace HUD
         public static library_dll.Entities.HUDD CarHud = new library_dll.Entities.HUDD();
         public static int CarErrorCode;
         public static int trafficcode;
+        public static int vehspeed = 0, minspeed = 0;
+        public static Boolean decspeed = false;
 
 
 
@@ -294,39 +296,121 @@ namespace HUD
                 Statustxt.Text = "BLTP";
 
 
-            //if (trafficcode == 1)
-            //{
-            //    textSpeed.Text = "65";
-            //    vehspeed = 65;
-            //    decspeed = true;
-            //    minspeed = 65;
-            //}
-            //else if (trafficcode == 2)
-            //{
-            //    vehspeed = 45;
-            //    if (decspeed == true)
-            //    {
-            //        if (minspeed > vehspeed)
-            //        {
-            //            TmrSpdDec.Enabled = true;
-            //            //showBox();
-            //            decspeed = false;
-            //        }
-            //    }
-            //}
-
-
             if (trafficcode == 1)
-                textSpeed.Text = "65";
-            if (trafficcode == 2)
-                textSpeed.Text = "45";
+            {
+
+                vehspeed = 65;
+                decspeed = true;
+                if (decspeed == true)
+                {
+                    if (minspeed < vehspeed)
+                    {
+                        TmrSpdInc.Enabled = true;
+                    }
+
+                    //minspeed = 65;
+                }
+
+            }
+            else if (trafficcode == 2)
+            {
+                vehspeed = 45;
+                decspeed = true;
+                if (decspeed == true)
+                {
+                    if (minspeed > vehspeed)
+                    {
+
+                        TmrSpdDec.Enabled = true;
+                        //decspeed = false;
+
+                    }
+                    if (minspeed < vehspeed)
+                    {
+                        TmrSpdInc.Enabled = true;
+                    }
+                }
+            }
             if (trafficcode == 3)
-                textSpeed.Text = "30";
+                
+            vehspeed = 30;
+            decspeed = true;
+            if (decspeed == true)
+            {
+
+                if (minspeed > vehspeed)
+                {
+                    decspeed = true;
+                    TmrSpdDec.Enabled = true;
+                    //decspeed = false;
+
+                }
+
+                if (minspeed < vehspeed)
+                {
+                    TmrSpdInc.Enabled = true;
+                }
+            }
             if (trafficcode == 4)
-                textSpeed.Text = "10";
+                
+            vehspeed = 10;
+            decspeed = true;
+            if (decspeed == true)
+            {
+                if (minspeed > vehspeed)
+                {
+
+                    TmrSpdDec.Enabled = true;
+                   // decspeed = false;
+
+                }
+
+                if (minspeed < vehspeed)
+                {
+                    TmrSpdInc.Enabled = true;
+                }
+            }
 
 
 
+            //if (trafficcode == 1)
+            //    textSpeed.Text = "65";
+            //if (trafficcode == 2)
+            //    textSpeed.Text = "45";
+            //if (trafficcode == 3)
+            //    textSpeed.Text = "30";
+            //if (trafficcode == 4)
+            //    textSpeed.Text = "10";
+
+
+
+
+        }
+
+        private void TmrSpdDec_Tick(object sender, EventArgs e)
+        {
+            if (minspeed >= (vehspeed + 1))
+            {
+                minspeed = minspeed - 1;
+                textSpeed.Text = Convert.ToString(minspeed);
+            }
+            else
+            {
+                TmrSpdDec.Enabled = false;
+            }
+        }
+
+        private void TmrSpdInc_Tick(object sender, EventArgs e)
+        {
+            if (minspeed <= (vehspeed - 1))
+            {
+                minspeed = minspeed + 1;
+                textSpeed.Text = Convert.ToString(minspeed);
+            }
+            else
+            {
+                TmrSpdDec.Enabled = false;
+            }
 
         }
 
