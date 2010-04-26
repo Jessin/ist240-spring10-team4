@@ -121,3 +121,11 @@ C:\Documents and Settings\J & J\Desktop\New Folder (9)\ProjectsCar\library_dll\l
 C:\Documents and Settings\J & J\Desktop\New Folder (9)\ProjectsCar\library_dll\library_dll\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\J & J\Desktop\New Folder (9)\ProjectsCar\library_dll\library_dll\obj\Debug\library_dll.dll
 C:\Documents and Settings\J & J\Desktop\New Folder (9)\ProjectsCar\library_dll\library_dll\obj\Debug\library_dll.pdb
+C:\Documents and Settings\jpj5048\Desktop\New Folder\ProjectsCar\library_dll\library_dll\bin\Debug\library_dll.dll
+C:\Documents and Settings\jpj5048\Desktop\New Folder\ProjectsCar\library_dll\library_dll\bin\Debug\library_dll.pdb
+C:\Documents and Settings\jpj5048\Desktop\New Folder\ProjectsCar\library_dll\library_dll\bin\Debug\HUD.exe
+C:\Documents and Settings\jpj5048\Desktop\New Folder\ProjectsCar\library_dll\library_dll\bin\Debug\HUD.vshost.exe
+C:\Documents and Settings\jpj5048\Desktop\New Folder\ProjectsCar\library_dll\library_dll\bin\Debug\HUD.pdb
+C:\Documents and Settings\jpj5048\Desktop\New Folder\ProjectsCar\library_dll\library_dll\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\jpj5048\Desktop\New Folder\ProjectsCar\library_dll\library_dll\obj\Debug\library_dll.dll
+C:\Documents and Settings\jpj5048\Desktop\New Folder\ProjectsCar\library_dll\library_dll\obj\Debug\library_dll.pdb

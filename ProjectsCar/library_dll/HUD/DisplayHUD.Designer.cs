@@ -48,6 +48,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.TmrSpdDec = new System.Windows.Forms.Timer(this.components);
+            this.TmrSpdInc = new System.Windows.Forms.Timer(this.components);
             this.boxDistance.SuspendLayout();
             this.boxFuel.SuspendLayout();
             this.boxSpeed.SuspendLayout();
@@ -243,6 +245,14 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // TmrSpdDec
+            // 
+            this.TmrSpdDec.Tick += new System.EventHandler(this.TmrSpdDec_Tick);
+            // 
+            // TmrSpdInc
+            // 
+            this.TmrSpdInc.Tick += new System.EventHandler(this.TmrSpdInc_Tick);
+            // 
             // DisplayHUD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -293,6 +303,8 @@
         private System.Windows.Forms.TextBox Statustxt;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer TmrSpdDec;
+        private System.Windows.Forms.Timer TmrSpdInc;
     }
 }
 
