@@ -90,9 +90,10 @@
             // 
             // txtDistance
             // 
+            this.txtDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDistance.Location = new System.Drawing.Point(28, 41);
             this.txtDistance.Name = "txtDistance";
-            this.txtDistance.Size = new System.Drawing.Size(100, 29);
+            this.txtDistance.Size = new System.Drawing.Size(100, 26);
             this.txtDistance.TabIndex = 0;
             this.txtDistance.TextChanged += new System.EventHandler(this.txtDistance_TextChanged);
             // 
@@ -121,9 +122,10 @@
             // 
             // textFuel
             // 
+            this.textFuel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textFuel.Location = new System.Drawing.Point(28, 46);
             this.textFuel.Name = "textFuel";
-            this.textFuel.Size = new System.Drawing.Size(55, 29);
+            this.textFuel.Size = new System.Drawing.Size(55, 26);
             this.textFuel.TabIndex = 1;
             this.textFuel.TextChanged += new System.EventHandler(this.textFuel_TextChanged);
             // 
