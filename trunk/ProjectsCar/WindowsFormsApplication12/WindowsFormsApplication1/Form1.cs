@@ -24,18 +24,10 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
-        
-
-      
-
-        
-
         private void StartButton_Click(object sender, EventArgs e)
         {
 
             // start region
-
-           
 
         }
         #region buttons
@@ -331,11 +323,6 @@ namespace WindowsFormsApplication1
             TextWriter texterWriter = new StreamWriter("../../../../CarTestingInfo.xml");
             serializer.Serialize(texterWriter, actualTest);
             texterWriter.Close();
-
-
-
-
-
 
         }
 

@@ -30,27 +30,7 @@ namespace MonSys
             timer1.Enabled = true;
             timer1.Interval = 100;
 
-            //try
-            //{
-            //    library_dll.Entities.HUDD CarHud = new library_dll.Entities.HUDD();
-            //    library_dll.Entities.TestingSystem TS = new library_dll.Entities.TestingSystem();
-            //    XmlReader reader = new XmlTextReader(@"../../../../CarTestingInfo.xml");
-            //    XmlSerializer serializer = new XmlSerializer(typeof(library_dll.Entities.TestingSystem));
-            //    TS = (library_dll.Entities.TestingSystem)serializer.Deserialize(reader);
-            //    int testcode = Convert.ToInt16(TS.ErrorCode);
-            //    if (ErrorCode == 1)
-            //        textBox1.Text = "Engine Overheated";
-            //    if (ErrorCode == 2)
-            //        textBox2.Text = "Washer Fluid Low";
-            //    if (ErrorCode == 3)
-            //        textBox3.Text = "Tire Pressure Low";
-            //    if (ErrorCode == 4)
-            //        textBox4.Text = "Needs Oil Change";
-            //}
-            //catch (FileNotFoundException ex)
-            //{
-            //    MessageBox.Show(ex + "FILE NOT FOUND");
-            //}
+           
         }
 
         

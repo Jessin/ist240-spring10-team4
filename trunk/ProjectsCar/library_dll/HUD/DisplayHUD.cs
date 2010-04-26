@@ -28,101 +28,12 @@ namespace HUD
 
 
 
-
-
-        public static void readAgian()
-        {
-            
-            //try
-            //{
-            //    library_dll.Entities.HUDD CarHud = new library_dll.Entities.HUDD();
-            //    library_dll.Entities.TestingSystem TS = new library_dll.Entities.TestingSystem();
-            //    XmlReader reader = new XmlTextReader("../../../../CarTestingInfo.xml");
-            //    XmlSerializer serializer = new XmlSerializer(typeof(library_dll.Entities.TestingSystem));
-            //    TS = (library_dll.Entities.TestingSystem)serializer.Deserialize(reader);
-            //    CarHud.Light = TS.Light;
-                
-               
-
-            //    MessageBox.Show(TS.Light);
-            //    //int currentdirection = Convert.ToInt16(TS.DirectionCode);
-            //    //MessageBox.Show(Convert.ToString(currentdirection));
-
-                
-            //    reader.Close();
-
-
-
-            //}
-            //catch (FileNotFoundException ex)
-            //{
-            //    MessageBox.Show(ex + "FILE NOT FOUND");
-            //}
-        }
-       
-
-
         private void DisplayHUD_Load_1(object sender, EventArgs e)
         {
             library_dll.Entities.utility.Timer(1000);
 
-
-
             timer1.Enabled = true;
             timer1.Interval = 100;
-            
-            
-
-            
-
-            
-            
-
-
-
-
-            //try
-            //{
-                //library_dll.Entities.HUDD CarHud = new library_dll.Entities.HUDD();
-                //library_dll.Entities.TestingSystem TS = new library_dll.Entities.TestingSystem();
-                //XmlReader reader = new XmlTextReader("../../../../CarTestingInfo.xml");
-                //XmlSerializer serializer = new XmlSerializer(typeof(library_dll.Entities.TestingSystem));
-                //TS = (library_dll.Entities.TestingSystem)serializer.Deserialize(reader);
-                //CarHud.Light = TS.Light;
-            //    txtLights.Text = CarHud.Light;
-            //    int testcode = Convert.ToInt16(TS.ErrorCode);
-            //    int trafficcode = Convert.ToInt16(TS.TrafficCode);
-            
-            //    int Weather = Convert.ToInt16(TS.WeatherCode);
-              
-               
-
-            //    //int light = Convert.ToInt16(TS.Light);
-            //    //if (light == 0)
-            //    //    (light.Text = "
-
-
-
-
-
-            //    Statustxt.Text = Convert.ToString(testcode);
-
-
-
-
-
-
-            //    //int currentdirection = Convert.ToInt16(TS.DirectionCode);
-            //    //MessageBox.Show(Convert.ToString(currentdirection));
-            //    reader.Close();
-
-
-
-            //}
-            //catch (FileNotFoundException ex)
-            //{
-            //    MessageBox.Show(ex + "FILE NOT FOUND");
-            //}
 
         }
 
@@ -172,60 +83,13 @@ namespace HUD
 
         private void txtLights_TextChanged(object sender, EventArgs e)
         {
-           
-             
-           
-            //if (TestingSystem.Weather.)
-            //{
-            //   txtLights.Text = "ON";
-            //}
-            //if (weatherCode == 2)
-            //{
-            //    txtLights.Text = "ON";
-            //}
-            //if (weatherCode == 3)
-            //{
-            //    txtLights.Text = "ON";
-            //}
-            //if (weatherCode == 4)
-            //{
-            //    txtLights.Text = "ON";
-            //}
-            
-            //else
-            //{
-            //    txtLights.Text = "OFF";
-            //}
+   
         }
 
         private void txtWipers_TextChanged(object sender, EventArgs e)
         {
-            
-
-            //if (weatherCode == 1)
-            //{
-            //    txtWipers.Text = "ON";
-            //}
-            //if (weatherCode == 2)
-            //{
-            //    txtWipers.Text = "ON";
-            //}
-            //if (weatherCode == 3)
-            //{
-            //    txtWipers.Text = "ON";
-            //}
-            //if (weatherCode == 4)
-            //{
-            //    txtWipers.Text = "ON";
-            //}
-
-            //else
-            //{
-            //    txtWipers.Text = "OFF";
-            //}
+          
         }
-
-       
 
         private void boxSpeed_Enter(object sender, EventArgs e)
         {
@@ -246,9 +110,6 @@ namespace HUD
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
-
-            
-
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -370,20 +231,6 @@ namespace HUD
                     TmrSpdInc.Enabled = true;
                 }
             }
-
-
-
-            //if (trafficcode == 1)
-            //    textSpeed.Text = "65";
-            //if (trafficcode == 2)
-            //    textSpeed.Text = "45";
-            //if (trafficcode == 3)
-            //    textSpeed.Text = "30";
-            //if (trafficcode == 4)
-            //    textSpeed.Text = "10";
-
-
-
 
         }
 
