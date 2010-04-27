@@ -140,21 +140,21 @@ namespace HUD
             txtLights.Text = CarHud.Light;
             Statustxt.Text = Convert.ToString(CarErrorCode);
             if (CarErrorCode == 0)
-                Statustxt.Text = "NI";
+                Statustxt.Text = "No Issues";
             if (CarErrorCode == 1)
-                Statustxt.Text = "EOH";
+                Statustxt.Text = "Maintenance Required";
             if (CarErrorCode == 2)
-                Statustxt.Text = "LWF";
+                Statustxt.Text = "Maintenance Required";
             if (CarErrorCode == 3)
-                Statustxt.Text = "Oil";
+                Statustxt.Text = "Maintenance Required";
             if (CarErrorCode == 4)
-                Statustxt.Text = "FRTP";
+                Statustxt.Text = "Maintenance Required";
             if (CarErrorCode == 5)
-                Statustxt.Text = "FLTP";
+                Statustxt.Text = "Maintenance Required";
             if (CarErrorCode == 6)
-                Statustxt.Text = "BRTP";
+                Statustxt.Text = "Maintenance Required";
             if (CarErrorCode == 7)
-                Statustxt.Text = "BLTP";
+                Statustxt.Text = "Maintenance Required";
 
 
             if (trafficcode == 1)

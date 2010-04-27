@@ -43,6 +43,9 @@ namespace MonSys
                 errorCodeBox1.Visible = true;
                 errorCodeBox1.Enabled = true;
                 errorCodeBox1.Text = "No Issues Found";
+                textBox2.Text = "";
+                textBox2.Visible = true;
+                textBox2.Enabled = false;
             }
 
             else if (library_dll.Entities.utility.MonErrorCode == 1)
@@ -51,7 +54,10 @@ namespace MonSys
                 errorCodeBox2.Enabled = false;
                 errorCodeBox1.Visible = true;
                 errorCodeBox1.Enabled = true;
-                errorCodeBox1.Text = " Engine Overheat";
+                errorCodeBox1.Text = "Engine Overheat";
+                textBox2.Text = "Let Engine cool";
+                textBox2.Visible = true;
+                textBox2.Enabled = true;
             }
             else if (library_dll.Entities.utility.MonErrorCode == 2)
             {
@@ -60,6 +66,9 @@ namespace MonSys
                 errorCodeBox1.Visible = true;
                 errorCodeBox1.Enabled = true;
                 errorCodeBox1.Text = "Low Washer Fluid";
+                textBox2.Text = "Fill Washer Fluid";
+                textBox2.Visible = true;
+                textBox2.Enabled = true;
             }
             else if (library_dll.Entities.utility.MonErrorCode == 3)
             {
@@ -68,30 +77,45 @@ namespace MonSys
                 errorCodeBox1.Visible = true;
                 errorCodeBox1.Enabled = true;
                 errorCodeBox1.Text = "Needs Oil change";
+                textBox2.Text = "Schedule Maintenance Appointment";
+                textBox2.Visible = true;
+                textBox2.Enabled = true;
             }
             else if (library_dll.Entities.utility.MonErrorCode == 4)
             {
                 errorCodeBox2.Visible = true;
                 errorCodeBox2.Enabled = true;
-                errorCodeBox2.Text = "Low Tire Pressure in front Right Wheel";
+                errorCodeBox2.Text = "Low Tire Pressure F Right Wheel";
+                textBox2.Text = "Replace tire OR add air to Wheel";
+                textBox2.Visible = true;
+                textBox2.Enabled = true;
             }
             else if (library_dll.Entities.utility.MonErrorCode == 5)
             {
                 errorCodeBox2.Visible = true;
                 errorCodeBox2.Enabled = true;
-                errorCodeBox2.Text = "Low Tire Pressure in front Left Wheel";
+                errorCodeBox2.Text = "Low Tire Pressure F Left Wheel";
+                textBox2.Text = "Replace tire OR add air to Wheel";
+                textBox2.Visible = true;
+                textBox2.Enabled = true;
             }
             else if (library_dll.Entities.utility.MonErrorCode == 6)
             {
                 errorCodeBox2.Visible = true;
                 errorCodeBox2.Enabled = true;
-                errorCodeBox2.Text = "Low Tire Pressure in back Right Wheel";
+                errorCodeBox2.Text = "Low Tire Pressure B Right Wheel";
+                textBox2.Text = "Replace tire OR add air to Wheel";
+                textBox2.Visible = true;
+                textBox2.Enabled = true;
             }
             else if (library_dll.Entities.utility.MonErrorCode == 7)
             {
                 errorCodeBox2.Visible = true;
                 errorCodeBox2.Enabled = true;
-                errorCodeBox2.Text = "Low Tire Pressure in back Left Wheel";
+                errorCodeBox2.Text = "Low Tire Pressure B Left Wheel";
+                textBox2.Text = "Replace tire OR add air to Wheel";
+                textBox2.Visible = true;
+                textBox2.Enabled = true;
             }
             if (library_dll.Entities.utility.DirectCode == 0)
                textBox1.Text  = "North";
@@ -117,6 +141,16 @@ namespace MonSys
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void errorCodeBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
