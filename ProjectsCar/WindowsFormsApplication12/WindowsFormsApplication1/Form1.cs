@@ -146,19 +146,22 @@ namespace WindowsFormsApplication1
 
             if (OHeatButton.Checked)
                 actualTest.ErrorCode = TestingSystem.CarProblem.OverHeat;
-            else if (WFluidButton.Checked )
+            else if (WFluidButton.Checked)
                 actualTest.ErrorCode = TestingSystem.CarProblem.WasherFluid;
+            else if (NoProblemButton.Checked)
+                actualTest.ErrorCode = TestingSystem.CarProblem.NoIssues;
 
-            else if (TPressureButton.Checked )
-            {int returnValue = library_dll.Entities.utility.RandomNumber(4, 7);
-            if (returnValue == 4)
-                actualTest.ErrorCode = TestingSystem.CarProblem.FrontRightWheel;
-            else if (returnValue == 5)
-                actualTest.ErrorCode = TestingSystem.CarProblem.FrontLeftWheel;
-            else if (returnValue == 6)
-                actualTest.ErrorCode = TestingSystem.CarProblem.BackRightWheel;
-            else if (returnValue == 7)
-                actualTest.ErrorCode = TestingSystem.CarProblem.BackLeftWheel;
+            else if (TPressureButton.Checked)
+            {
+                int returnValue = library_dll.Entities.utility.RandomNumber(4, 7);
+                if (returnValue == 4)
+                    actualTest.ErrorCode = TestingSystem.CarProblem.FrontRightWheel;
+                else if (returnValue == 5)
+                    actualTest.ErrorCode = TestingSystem.CarProblem.FrontLeftWheel;
+                else if (returnValue == 6)
+                    actualTest.ErrorCode = TestingSystem.CarProblem.BackRightWheel;
+                else if (returnValue == 7)
+                    actualTest.ErrorCode = TestingSystem.CarProblem.BackLeftWheel;
             }
 
             if (NoTraffButton.Checked)
@@ -429,6 +432,11 @@ namespace WindowsFormsApplication1
         }
 
         private void HeavyTraffButton_CheckedChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NoProblemButton_CheckedChanged(object sender, EventArgs e)
         {
 
         }

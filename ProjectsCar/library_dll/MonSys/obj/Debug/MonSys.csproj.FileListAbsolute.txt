@@ -173,3 +173,15 @@ C:\Documents and Settings\jvr5013\Desktop\ist240-spring10-team4\ProjectsCar\libr
 C:\Documents and Settings\jvr5013\Desktop\ist240-spring10-team4\ProjectsCar\library_dll\MonSys\obj\Debug\MonSys.MonSysForm.resources
 C:\Documents and Settings\jvr5013\Desktop\ist240-spring10-team4\ProjectsCar\library_dll\MonSys\obj\Debug\MonSys.Properties.Resources.resources
 C:\Documents and Settings\jvr5013\Desktop\ist240-spring10-team4\ProjectsCar\library_dll\MonSys\obj\Debug\MonSys.csproj.GenerateResource.Cache
+C:\Documents and Settings\jpj5048\Desktop\New Folder\ist240-spring10-team4\ProjectsCar\library_dll\MonSys\obj\Debug\MonSys.exe
+C:\Documents and Settings\jpj5048\Desktop\New Folder\ist240-spring10-team4\ProjectsCar\library_dll\MonSys\obj\Debug\MonSys.pdb
+C:\Documents and Settings\jpj5048\Desktop\New Folder\ist240-spring10-team4\ProjectsCar\library_dll\MonSys\bin\Debug\MonSys.exe
+C:\Documents and Settings\jpj5048\Desktop\New Folder\ist240-spring10-team4\ProjectsCar\library_dll\MonSys\bin\Debug\MonSys.pdb
+C:\Documents and Settings\jpj5048\Desktop\New Folder\ist240-spring10-team4\ProjectsCar\library_dll\MonSys\bin\Debug\library_dll.dll
+C:\Documents and Settings\jpj5048\Desktop\New Folder\ist240-spring10-team4\ProjectsCar\library_dll\MonSys\bin\Debug\HUD.exe
+C:\Documents and Settings\jpj5048\Desktop\New Folder\ist240-spring10-team4\ProjectsCar\library_dll\MonSys\bin\Debug\HUD.pdb
+C:\Documents and Settings\jpj5048\Desktop\New Folder\ist240-spring10-team4\ProjectsCar\library_dll\MonSys\bin\Debug\library_dll.pdb
+C:\Documents and Settings\jpj5048\Desktop\New Folder\ist240-spring10-team4\ProjectsCar\library_dll\MonSys\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\jpj5048\Desktop\New Folder\ist240-spring10-team4\ProjectsCar\library_dll\MonSys\obj\Debug\MonSys.MonSysForm.resources
+C:\Documents and Settings\jpj5048\Desktop\New Folder\ist240-spring10-team4\ProjectsCar\library_dll\MonSys\obj\Debug\MonSys.Properties.Resources.resources
+C:\Documents and Settings\jpj5048\Desktop\New Folder\ist240-spring10-team4\ProjectsCar\library_dll\MonSys\obj\Debug\MonSys.csproj.GenerateResource.Cache

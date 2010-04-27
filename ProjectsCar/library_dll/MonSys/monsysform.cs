@@ -26,7 +26,7 @@ namespace MonSys
             library_dll.Entities.utility.Timer(1000);
 
 
-            errorCodeBox1.Enabled = false;
+            
             timer1.Enabled = true;
             timer1.Interval = 100;
 

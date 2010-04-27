@@ -53,6 +53,7 @@
             this.LightTraffButton = new System.Windows.Forms.RadioButton();
             this.NoTraffButton = new System.Windows.Forms.RadioButton();
             this.EXITBUTTON = new System.Windows.Forms.Button();
+            this.NoProblemButton = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -154,6 +155,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.NoProblemButton);
             this.groupBox2.Controls.Add(this.OilButton);
             this.groupBox2.Controls.Add(this.TPressureButton);
             this.groupBox2.Controls.Add(this.WFluidButton);
@@ -168,7 +170,7 @@
             // OilButton
             // 
             this.OilButton.AutoSize = true;
-            this.OilButton.Location = new System.Drawing.Point(7, 101);
+            this.OilButton.Location = new System.Drawing.Point(7, 108);
             this.OilButton.Name = "OilButton";
             this.OilButton.Size = new System.Drawing.Size(37, 17);
             this.OilButton.TabIndex = 3;
@@ -180,7 +182,7 @@
             // TPressureButton
             // 
             this.TPressureButton.AutoSize = true;
-            this.TPressureButton.Location = new System.Drawing.Point(7, 78);
+            this.TPressureButton.Location = new System.Drawing.Point(7, 86);
             this.TPressureButton.Name = "TPressureButton";
             this.TPressureButton.Size = new System.Drawing.Size(84, 17);
             this.TPressureButton.TabIndex = 2;
@@ -192,7 +194,7 @@
             // WFluidButton
             // 
             this.WFluidButton.AutoSize = true;
-            this.WFluidButton.Location = new System.Drawing.Point(7, 54);
+            this.WFluidButton.Location = new System.Drawing.Point(7, 63);
             this.WFluidButton.Name = "WFluidButton";
             this.WFluidButton.Size = new System.Drawing.Size(84, 17);
             this.WFluidButton.TabIndex = 1;
@@ -204,7 +206,7 @@
             // OHeatButton
             // 
             this.OHeatButton.AutoSize = true;
-            this.OHeatButton.Location = new System.Drawing.Point(7, 30);
+            this.OHeatButton.Location = new System.Drawing.Point(7, 40);
             this.OHeatButton.Name = "OHeatButton";
             this.OHeatButton.Size = new System.Drawing.Size(71, 17);
             this.OHeatButton.TabIndex = 0;
@@ -344,6 +346,18 @@
             this.EXITBUTTON.UseVisualStyleBackColor = true;
             this.EXITBUTTON.Click += new System.EventHandler(this.EXITBUTTON_Click_1);
             // 
+            // NoProblemButton
+            // 
+            this.NoProblemButton.AutoSize = true;
+            this.NoProblemButton.Location = new System.Drawing.Point(7, 17);
+            this.NoProblemButton.Name = "NoProblemButton";
+            this.NoProblemButton.Size = new System.Drawing.Size(82, 17);
+            this.NoProblemButton.TabIndex = 4;
+            this.NoProblemButton.TabStop = true;
+            this.NoProblemButton.Text = "NoProblems";
+            this.NoProblemButton.UseVisualStyleBackColor = true;
+            this.NoProblemButton.CheckedChanged += new System.EventHandler(this.NoProblemButton_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -402,6 +416,7 @@
         private System.Windows.Forms.RadioButton HeavyRainButton;
         private System.Windows.Forms.Button EXITBUTTON;
         private System.Windows.Forms.RadioButton ClearButton1;
+        private System.Windows.Forms.RadioButton NoProblemButton;
     }
 }
 
