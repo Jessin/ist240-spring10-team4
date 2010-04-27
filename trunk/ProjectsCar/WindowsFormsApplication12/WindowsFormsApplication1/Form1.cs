@@ -126,6 +126,13 @@ namespace WindowsFormsApplication1
             
 
             library_dll.Entities.TestingSystem actualTest = new library_dll.Entities.TestingSystem();
+            actualTest.WeatherCode = library_dll.Entities.TestingSystem.Weather.Clear;
+            actualTest.ErrorCode = library_dll.Entities.TestingSystem.CarProblem.NoIssues;
+            actualTest.TrafficCode= library_dll.Entities.TestingSystem.Traffic.Free;
+            actualTest.DirectionCode = library_dll.Entities.TestingSystem.Direction.North;
+            actualTest.Light = "OFF";
+            
+
             if (DayButton.Checked)
                 actualTest.Light = "OFF";
             if (NightButton.Checked)
