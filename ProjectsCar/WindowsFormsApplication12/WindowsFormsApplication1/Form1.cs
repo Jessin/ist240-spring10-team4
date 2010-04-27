@@ -150,6 +150,8 @@ namespace WindowsFormsApplication1
                 actualTest.ErrorCode = TestingSystem.CarProblem.WasherFluid;
             else if (NoProblemButton.Checked)
                 actualTest.ErrorCode = TestingSystem.CarProblem.NoIssues;
+            else if (OilButton.Checked)
+                actualTest.ErrorCode = TestingSystem.CarProblem.Oil;
 
             else if (TPressureButton.Checked)
             {

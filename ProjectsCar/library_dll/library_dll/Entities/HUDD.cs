@@ -5,7 +5,7 @@ using System.Text;
 
 namespace library_dll.Entities
 {
-    public class HUDD : Equipment
+    public class HUDD
     {
         private int speed, distance, fuel, wiperspeed;
         
