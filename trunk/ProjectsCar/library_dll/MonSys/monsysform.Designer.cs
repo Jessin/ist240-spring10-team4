@@ -101,9 +101,10 @@
             this.errorCodeBox2.MaxLength = 50000;
             this.errorCodeBox2.Multiline = true;
             this.errorCodeBox2.Name = "errorCodeBox2";
-            this.errorCodeBox2.Size = new System.Drawing.Size(167, 28);
+            this.errorCodeBox2.Size = new System.Drawing.Size(167, 47);
             this.errorCodeBox2.TabIndex = 6;
             this.errorCodeBox2.Visible = false;
+            this.errorCodeBox2.TextChanged += new System.EventHandler(this.errorCodeBox2_TextChanged);
             // 
             // button1
             // 
@@ -120,7 +121,7 @@
             // 
             this.lblSteps.AutoSize = true;
             this.lblSteps.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSteps.Location = new System.Drawing.Point(13, 98);
+            this.lblSteps.Location = new System.Drawing.Point(13, 134);
             this.lblSteps.Name = "lblSteps";
             this.lblSteps.Size = new System.Drawing.Size(63, 20);
             this.lblSteps.TabIndex = 8;
@@ -129,11 +130,12 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(73, 93);
+            this.textBox2.Location = new System.Drawing.Point(73, 121);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(167, 89);
+            this.textBox2.Size = new System.Drawing.Size(167, 61);
             this.textBox2.TabIndex = 9;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // MonSysForm
             // 

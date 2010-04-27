@@ -156,3 +156,19 @@ C:\Documents and Settings\J & J\Desktop\New Folder (10)\ProjectsCar\library_dll\
 C:\Documents and Settings\J & J\Desktop\New Folder (10)\ProjectsCar\library_dll\library_dll\bin\Debug\HUD.exe
 C:\Documents and Settings\J & J\Desktop\New Folder (10)\ProjectsCar\library_dll\library_dll\bin\Debug\HUD.vshost.exe
 C:\Documents and Settings\J & J\Desktop\New Folder (10)\ProjectsCar\library_dll\library_dll\bin\Debug\HUD.pdb
+I:\ist240-spring10-team4\ProjectsCar\library_dll\library_dll\bin\Debug\library_dll.dll
+I:\ist240-spring10-team4\ProjectsCar\library_dll\library_dll\bin\Debug\library_dll.pdb
+I:\ist240-spring10-team4\ProjectsCar\library_dll\library_dll\bin\Debug\HUD.exe
+I:\ist240-spring10-team4\ProjectsCar\library_dll\library_dll\bin\Debug\HUD.vshost.exe
+I:\ist240-spring10-team4\ProjectsCar\library_dll\library_dll\bin\Debug\HUD.pdb
+I:\ist240-spring10-team4\ProjectsCar\library_dll\library_dll\obj\Debug\ResolveAssemblyReference.cache
+I:\ist240-spring10-team4\ProjectsCar\library_dll\library_dll\obj\Debug\library_dll.dll
+I:\ist240-spring10-team4\ProjectsCar\library_dll\library_dll\obj\Debug\library_dll.pdb
+C:\Documents and Settings\rgp5005\Desktop\ist240-spring10-team4\ProjectsCar\library_dll\library_dll\bin\Debug\library_dll.dll
+C:\Documents and Settings\rgp5005\Desktop\ist240-spring10-team4\ProjectsCar\library_dll\library_dll\bin\Debug\library_dll.pdb
+C:\Documents and Settings\rgp5005\Desktop\ist240-spring10-team4\ProjectsCar\library_dll\library_dll\bin\Debug\HUD.exe
+C:\Documents and Settings\rgp5005\Desktop\ist240-spring10-team4\ProjectsCar\library_dll\library_dll\bin\Debug\HUD.vshost.exe
+C:\Documents and Settings\rgp5005\Desktop\ist240-spring10-team4\ProjectsCar\library_dll\library_dll\bin\Debug\HUD.pdb
+C:\Documents and Settings\rgp5005\Desktop\ist240-spring10-team4\ProjectsCar\library_dll\library_dll\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\rgp5005\Desktop\ist240-spring10-team4\ProjectsCar\library_dll\library_dll\obj\Debug\library_dll.dll
+C:\Documents and Settings\rgp5005\Desktop\ist240-spring10-team4\ProjectsCar\library_dll\library_dll\obj\Debug\library_dll.pdb
