@@ -37,6 +37,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.errorCodeBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.lblSteps = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // errorCodeBox1
@@ -77,7 +79,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 134);
+            this.label3.Location = new System.Drawing.Point(12, 208);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 20);
             this.label3.TabIndex = 4;
@@ -85,7 +87,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(100, 134);
+            this.textBox1.Location = new System.Drawing.Point(98, 206);
             this.textBox1.MaxLength = 50000;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(116, 20);
@@ -94,18 +96,19 @@
             // errorCodeBox2
             // 
             this.errorCodeBox2.Enabled = false;
-            this.errorCodeBox2.Location = new System.Drawing.Point(74, 58);
+            this.errorCodeBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorCodeBox2.Location = new System.Drawing.Point(73, 58);
             this.errorCodeBox2.MaxLength = 50000;
             this.errorCodeBox2.Multiline = true;
             this.errorCodeBox2.Name = "errorCodeBox2";
-            this.errorCodeBox2.Size = new System.Drawing.Size(167, 42);
+            this.errorCodeBox2.Size = new System.Drawing.Size(167, 28);
             this.errorCodeBox2.TabIndex = 6;
             this.errorCodeBox2.Visible = false;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(100, 232);
+            this.button1.Location = new System.Drawing.Point(106, 243);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(101, 45);
             this.button1.TabIndex = 7;
@@ -113,11 +116,32 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // lblSteps
+            // 
+            this.lblSteps.AutoSize = true;
+            this.lblSteps.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSteps.Location = new System.Drawing.Point(13, 98);
+            this.lblSteps.Name = "lblSteps";
+            this.lblSteps.Size = new System.Drawing.Size(63, 20);
+            this.lblSteps.TabIndex = 8;
+            this.lblSteps.Text = "Steps : ";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(73, 93);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(167, 89);
+            this.textBox2.TabIndex = 9;
+            // 
             // MonSysForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(312, 289);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.lblSteps);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.errorCodeBox2);
             this.Controls.Add(this.textBox1);
@@ -143,6 +167,8 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox errorCodeBox2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblSteps;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 

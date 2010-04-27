@@ -131,13 +131,25 @@ namespace WindowsFormsApplication1
             actualTest.TrafficCode= library_dll.Entities.TestingSystem.Traffic.Free;
             actualTest.DirectionCode = library_dll.Entities.TestingSystem.Direction.North;
             actualTest.Light = "OFF";
-            
 
+
+            library_dll.Entities.TestingSystem actualTest1 = new library_dll.Entities.TestingSystem();
             if (DayButton.Checked)
+            {
+                if (LightRainButton.Checked)
+                    actualTest.Light = "ON";
+                if (LightSnowButton.Checked)
+                    actualTest.Light = "ON";
+                if (HeavyRainButton.Checked)
+                    actualTest.Light = "ON";
+                if (HeavySnowButton.Checked)
+                    actualTest.Light = "ON";
+            }
+            else if (!DayButton.Checked)
                 actualTest.Light = "OFF";
+
             if (NightButton.Checked)
                 actualTest.Light = "ON";
-
             if (ClearButton1.Checked)
                 actualTest.WeatherCode = TestingSystem.Weather.Clear;
             else if (LightRainButton.Checked)
