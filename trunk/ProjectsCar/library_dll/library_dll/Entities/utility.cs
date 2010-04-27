@@ -7,14 +7,6 @@ using System.Timers;
 using System.Xml.Serialization;
 using System.Xml;
 using HUD;
-
-
-
-
-
-
-
-
 namespace library_dll.Entities
 {
 
