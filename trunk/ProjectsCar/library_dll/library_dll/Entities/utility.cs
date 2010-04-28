@@ -106,6 +106,7 @@ namespace library_dll.Entities
                 if (File.Exists("CarTestingInfo.xml"))
                 {
                     File.Delete("CarTestingInfo.xml");
+                    utility.Loger("File Found and deleted");
                     
                 }
                 else
