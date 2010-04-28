@@ -99,6 +99,51 @@ namespace library_dll.Entities
             return false;
 
         }
+        public static void DeleteFile()
+        {
+            try
+            {
+                if (File.Exists("CarTestingInfo.xml"))
+                {
+                    File.Delete("CarTestingInfo.xml");
+                    
+                }
+                else
+                    utility.Loger("File not found");
+
+                    
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                utility.Loger(ex.ToString());
+                
+            }
+        
+        }
+
+        public static void Loger(string strLogText)
+        {
+            StreamWriter log;
+
+            if (!File.Exists("logfile.txt"))
+            {
+                log = new StreamWriter("logfile.txt");
+            }
+            else
+            {
+                log = File.AppendText("logfile.txt");
+            }
+
+            // Write to the file:
+            log.WriteLine(DateTime.Now);
+            log.WriteLine(strLogText);
+            log.WriteLine();
+
+            // Close the stream:
+            log.Close();
+
+        }
 
 
     }

@@ -352,7 +352,7 @@ namespace WindowsFormsApplication1
 
         private void EXITBUTTON_Click(object sender, EventArgs e)
         {
-
+            utility.DeleteFile();
             Application.Exit();
         }
 
@@ -444,6 +444,7 @@ namespace WindowsFormsApplication1
 
         private void EXITBUTTON_Click_1(object sender, EventArgs e)
         {
+            utility.DeleteFile();
             Application.Exit();
         }
 
