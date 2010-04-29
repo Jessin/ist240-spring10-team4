@@ -37,6 +37,7 @@
             this.LightSnowButton = new System.Windows.Forms.RadioButton();
             this.LightRainButton = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.NoProblemButton = new System.Windows.Forms.RadioButton();
             this.OilButton = new System.Windows.Forms.RadioButton();
             this.TPressureButton = new System.Windows.Forms.RadioButton();
             this.WFluidButton = new System.Windows.Forms.RadioButton();
@@ -53,7 +54,8 @@
             this.LightTraffButton = new System.Windows.Forms.RadioButton();
             this.NoTraffButton = new System.Windows.Forms.RadioButton();
             this.EXITBUTTON = new System.Windows.Forms.Button();
-            this.NoProblemButton = new System.Windows.Forms.RadioButton();
+            this.label5 = new System.Windows.Forms.Label();
+            this.RandButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -62,9 +64,9 @@
             // 
             // TestButton
             // 
-            this.TestButton.Location = new System.Drawing.Point(101, 275);
+            this.TestButton.Location = new System.Drawing.Point(207, 277);
             this.TestButton.Name = "TestButton";
-            this.TestButton.Size = new System.Drawing.Size(122, 45);
+            this.TestButton.Size = new System.Drawing.Size(109, 45);
             this.TestButton.TabIndex = 0;
             this.TestButton.Text = "TEST";
             this.TestButton.UseVisualStyleBackColor = true;
@@ -110,10 +112,10 @@
             this.HeavySnowButton.AutoSize = true;
             this.HeavySnowButton.Location = new System.Drawing.Point(7, 108);
             this.HeavySnowButton.Name = "HeavySnowButton";
-            this.HeavySnowButton.Size = new System.Drawing.Size(83, 17);
+            this.HeavySnowButton.Size = new System.Drawing.Size(86, 17);
             this.HeavySnowButton.TabIndex = 3;
             this.HeavySnowButton.TabStop = true;
-            this.HeavySnowButton.Text = "HeavySnow";
+            this.HeavySnowButton.Text = "Heavy Snow";
             this.HeavySnowButton.UseVisualStyleBackColor = true;
             this.HeavySnowButton.CheckedChanged += new System.EventHandler(this.HeavySnowButton_CheckedChanged);
             // 
@@ -122,10 +124,10 @@
             this.HeavyRainButton.AutoSize = true;
             this.HeavyRainButton.Location = new System.Drawing.Point(7, 84);
             this.HeavyRainButton.Name = "HeavyRainButton";
-            this.HeavyRainButton.Size = new System.Drawing.Size(78, 17);
+            this.HeavyRainButton.Size = new System.Drawing.Size(81, 17);
             this.HeavyRainButton.TabIndex = 2;
             this.HeavyRainButton.TabStop = true;
-            this.HeavyRainButton.Text = "HeavyRain";
+            this.HeavyRainButton.Text = "Heavy Rain";
             this.HeavyRainButton.UseVisualStyleBackColor = true;
             this.HeavyRainButton.CheckedChanged += new System.EventHandler(this.HeavyRainButton_CheckedChanged);
             // 
@@ -134,10 +136,10 @@
             this.LightSnowButton.AutoSize = true;
             this.LightSnowButton.Location = new System.Drawing.Point(7, 60);
             this.LightSnowButton.Name = "LightSnowButton";
-            this.LightSnowButton.Size = new System.Drawing.Size(75, 17);
+            this.LightSnowButton.Size = new System.Drawing.Size(78, 17);
             this.LightSnowButton.TabIndex = 1;
             this.LightSnowButton.TabStop = true;
-            this.LightSnowButton.Text = "LightSnow";
+            this.LightSnowButton.Text = "Light Snow";
             this.LightSnowButton.UseVisualStyleBackColor = true;
             this.LightSnowButton.CheckedChanged += new System.EventHandler(this.LightSnowButton_CheckedChanged);
             // 
@@ -146,10 +148,10 @@
             this.LightRainButton.AutoSize = true;
             this.LightRainButton.Location = new System.Drawing.Point(7, 37);
             this.LightRainButton.Name = "LightRainButton";
-            this.LightRainButton.Size = new System.Drawing.Size(70, 17);
+            this.LightRainButton.Size = new System.Drawing.Size(73, 17);
             this.LightRainButton.TabIndex = 0;
             this.LightRainButton.TabStop = true;
-            this.LightRainButton.Text = "LightRain";
+            this.LightRainButton.Text = "Light Rain";
             this.LightRainButton.UseVisualStyleBackColor = true;
             this.LightRainButton.CheckedChanged += new System.EventHandler(this.LightRainButton_CheckedChanged);
             // 
@@ -166,6 +168,18 @@
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Car";
+            // 
+            // NoProblemButton
+            // 
+            this.NoProblemButton.AutoSize = true;
+            this.NoProblemButton.Location = new System.Drawing.Point(7, 17);
+            this.NoProblemButton.Name = "NoProblemButton";
+            this.NoProblemButton.Size = new System.Drawing.Size(85, 17);
+            this.NoProblemButton.TabIndex = 4;
+            this.NoProblemButton.TabStop = true;
+            this.NoProblemButton.Text = "No Problems";
+            this.NoProblemButton.UseVisualStyleBackColor = true;
+            this.NoProblemButton.CheckedChanged += new System.EventHandler(this.NoProblemButton_CheckedChanged);
             // 
             // OilButton
             // 
@@ -184,10 +198,10 @@
             this.TPressureButton.AutoSize = true;
             this.TPressureButton.Location = new System.Drawing.Point(7, 86);
             this.TPressureButton.Name = "TPressureButton";
-            this.TPressureButton.Size = new System.Drawing.Size(84, 17);
+            this.TPressureButton.Size = new System.Drawing.Size(87, 17);
             this.TPressureButton.TabIndex = 2;
             this.TPressureButton.TabStop = true;
-            this.TPressureButton.Text = "TirePressure";
+            this.TPressureButton.Text = "Tire Pressure";
             this.TPressureButton.UseVisualStyleBackColor = true;
             this.TPressureButton.CheckedChanged += new System.EventHandler(this.TPressureButton_CheckedChanged);
             // 
@@ -196,10 +210,10 @@
             this.WFluidButton.AutoSize = true;
             this.WFluidButton.Location = new System.Drawing.Point(7, 63);
             this.WFluidButton.Name = "WFluidButton";
-            this.WFluidButton.Size = new System.Drawing.Size(84, 17);
+            this.WFluidButton.Size = new System.Drawing.Size(87, 17);
             this.WFluidButton.TabIndex = 1;
             this.WFluidButton.TabStop = true;
-            this.WFluidButton.Text = "WasherFluid";
+            this.WFluidButton.Text = "Washer Fluid";
             this.WFluidButton.UseVisualStyleBackColor = true;
             this.WFluidButton.CheckedChanged += new System.EventHandler(this.WFluidButton_CheckedChanged);
             // 
@@ -208,10 +222,10 @@
             this.OHeatButton.AutoSize = true;
             this.OHeatButton.Location = new System.Drawing.Point(7, 40);
             this.OHeatButton.Name = "OHeatButton";
-            this.OHeatButton.Size = new System.Drawing.Size(71, 17);
+            this.OHeatButton.Size = new System.Drawing.Size(74, 17);
             this.OHeatButton.TabIndex = 0;
             this.OHeatButton.TabStop = true;
-            this.OHeatButton.Text = "OverHeat";
+            this.OHeatButton.Text = "Over Heat";
             this.OHeatButton.UseVisualStyleBackColor = true;
             this.OHeatButton.CheckedChanged += new System.EventHandler(this.OHeatButton_CheckedChanged);
             // 
@@ -338,7 +352,7 @@
             // 
             // EXITBUTTON
             // 
-            this.EXITBUTTON.Location = new System.Drawing.Point(278, 275);
+            this.EXITBUTTON.Location = new System.Drawing.Point(332, 277);
             this.EXITBUTTON.Name = "EXITBUTTON";
             this.EXITBUTTON.Size = new System.Drawing.Size(109, 45);
             this.EXITBUTTON.TabIndex = 10;
@@ -346,23 +360,33 @@
             this.EXITBUTTON.UseVisualStyleBackColor = true;
             this.EXITBUTTON.Click += new System.EventHandler(this.EXITBUTTON_Click_1);
             // 
-            // NoProblemButton
+            // label5
             // 
-            this.NoProblemButton.AutoSize = true;
-            this.NoProblemButton.Location = new System.Drawing.Point(7, 17);
-            this.NoProblemButton.Name = "NoProblemButton";
-            this.NoProblemButton.Size = new System.Drawing.Size(82, 17);
-            this.NoProblemButton.TabIndex = 4;
-            this.NoProblemButton.TabStop = true;
-            this.NoProblemButton.Text = "NoProblems";
-            this.NoProblemButton.UseVisualStyleBackColor = true;
-            this.NoProblemButton.CheckedChanged += new System.EventHandler(this.NoProblemButton_CheckedChanged);
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(115, 19);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(282, 36);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "TSX VERSION 1.9";
+            // 
+            // RandButton
+            // 
+            this.RandButton.Location = new System.Drawing.Point(82, 277);
+            this.RandButton.Name = "RandButton";
+            this.RandButton.Size = new System.Drawing.Size(109, 45);
+            this.RandButton.TabIndex = 12;
+            this.RandButton.Text = "Random";
+            this.RandButton.UseVisualStyleBackColor = true;
+            this.RandButton.Click += new System.EventHandler(this.RandButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(554, 365);
+            this.Controls.Add(this.RandButton);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.EXITBUTTON);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.label4);
@@ -417,6 +441,8 @@
         private System.Windows.Forms.Button EXITBUTTON;
         private System.Windows.Forms.RadioButton ClearButton1;
         private System.Windows.Forms.RadioButton NoProblemButton;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button RandButton;
     }
 }
 
