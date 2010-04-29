@@ -152,66 +152,116 @@ namespace WindowsFormsApplication1
                 actualTest.Light = "ON";
             if (ClearButton1.Checked)
                 actualTest.WeatherCode = TestingSystem.Weather.Clear;
-            else if (LightRainButton.Checked)
+            if (LightRainButton.Checked)
                 actualTest.WeatherCode = TestingSystem.Weather.LightRain;
-            else if (LightSnowButton.Checked)
+            if (LightSnowButton.Checked)
                 actualTest.WeatherCode = TestingSystem.Weather.LightSnow;
-            else if (HeavyRainButton.Checked)
+            if (HeavyRainButton.Checked)
                 actualTest.WeatherCode = TestingSystem.Weather.HeavyRain;
-            else if (HeavySnowButton.Checked)
+            if (HeavySnowButton.Checked)
                 actualTest.WeatherCode = TestingSystem.Weather.HeavySnow;
-            else
-                actualTest.WeatherCode = TestingSystem.Weather.Clear;
+            
 
             if (OHeatButton.Checked)
                 actualTest.ErrorCode = TestingSystem.CarProblem.OverHeat;
-            else if (WFluidButton.Checked)
+            if (WFluidButton.Checked)
                 actualTest.ErrorCode = TestingSystem.CarProblem.WasherFluid;
-            else if (NoProblemButton.Checked)
+            if (NoProblemButton.Checked)
                 actualTest.ErrorCode = TestingSystem.CarProblem.NoIssues;
-            else if (OilButton.Checked)
+            if (OilButton.Checked)
                 actualTest.ErrorCode = TestingSystem.CarProblem.Oil;
 
-            else if (TPressureButton.Checked)
+            if (TPressureButton.Checked)
             {
                 int returnValue = library_dll.Entities.utility.RandomNumber(4, 7);
-                if (returnValue == 4)
-                    actualTest.ErrorCode = TestingSystem.CarProblem.FrontRightWheel;
-                else if (returnValue == 5)
-                    actualTest.ErrorCode = TestingSystem.CarProblem.FrontLeftWheel;
-                else if (returnValue == 6)
-                    actualTest.ErrorCode = TestingSystem.CarProblem.BackRightWheel;
-                else if (returnValue == 7)
-                    actualTest.ErrorCode = TestingSystem.CarProblem.BackLeftWheel;
+                //if (returnValue == 4)
+                //    actualTest.ErrorCode = TestingSystem.CarProblem.FrontRightWheel;
+                //else if (returnValue == 5)
+                //    actualTest.ErrorCode = TestingSystem.CarProblem.FrontLeftWheel;
+                //else if (returnValue == 6)
+                //    actualTest.ErrorCode = TestingSystem.CarProblem.BackRightWheel;
+                //else if (returnValue == 7)
+                //    actualTest.ErrorCode = TestingSystem.CarProblem.BackLeftWheel;
+                switch (returnValue)
+                {
+                    case 4:
+                        actualTest.ErrorCode = TestingSystem.CarProblem.FrontRightWheel;
+                        break;
+                    case 5:
+                        actualTest.ErrorCode = TestingSystem.CarProblem.FrontLeftWheel;
+                        break;
+                    case 6:
+                        actualTest.ErrorCode = TestingSystem.CarProblem.BackRightWheel;
+                        break;
+                    case 7:
+                        actualTest.ErrorCode = TestingSystem.CarProblem.BackLeftWheel;
+                        break;
+                }
             }
 
             if (NoTraffButton.Checked)
                 actualTest.TrafficCode = TestingSystem.Traffic.Free;
-            else if (LightTraffButton.Checked)
+            if (LightTraffButton.Checked)
                 actualTest.TrafficCode = TestingSystem.Traffic.LightTraffic;
-            else if (MediumTraffButton.Checked)
+            if (MediumTraffButton.Checked)
                 actualTest.TrafficCode = TestingSystem.Traffic.MediumTraffic;
-            else if (HeavyTraffButton.Checked)
+            if (HeavyTraffButton.Checked)
                 actualTest.TrafficCode = TestingSystem.Traffic.HeavyTraffic;
+            
+
+         
+
+            
+
 
             
             int directionValue = library_dll.Entities.utility.RandomNumber(0, 7);
-            if (directionValue == 0)
-                actualTest.DirectionCode = TestingSystem.Direction.North;
-            if (directionValue == 1)
-                actualTest.DirectionCode = TestingSystem.Direction.NorthEast;
-            if (directionValue == 2)
-                actualTest.DirectionCode = TestingSystem.Direction.East;
-            if (directionValue == 3)
-                actualTest.DirectionCode = TestingSystem.Direction.SouthEast;
-            if (directionValue == 4)
-                actualTest.DirectionCode = TestingSystem.Direction.South;
-            if (directionValue == 5)
-                actualTest.DirectionCode = TestingSystem.Direction.SouthWest;
-            if (directionValue == 6)
-                actualTest.DirectionCode = TestingSystem.Direction.West;
-            if (directionValue == 7)
-                actualTest.DirectionCode = TestingSystem.Direction.NorthWest;
+            //if (directionValue == 0)
+            //    actualTest.DirectionCode = TestingSystem.Direction.North;
+            //if (directionValue == 1)
+            //    actualTest.DirectionCode = TestingSystem.Direction.NorthEast;
+            //if (directionValue == 2)
+            //    actualTest.DirectionCode = TestingSystem.Direction.East;
+            //if (directionValue == 3)
+            //    actualTest.DirectionCode = TestingSystem.Direction.SouthEast;
+            //if (directionValue == 4)
+            //    actualTest.DirectionCode = TestingSystem.Direction.South;
+            //if (directionValue == 5)
+            //    actualTest.DirectionCode = TestingSystem.Direction.SouthWest;
+            //if (directionValue == 6)
+            //    actualTest.DirectionCode = TestingSystem.Direction.West;
+            //if (directionValue == 7)
+            //    actualTest.DirectionCode = TestingSystem.Direction.NorthWest;
+            switch (directionValue)
+            {
+                case 0:
+                    actualTest.DirectionCode = TestingSystem.Direction.North;
+                    break;
+                case 1:
+                    actualTest.DirectionCode = TestingSystem.Direction.NorthEast;
+                    break;
+                case 2:
+                    actualTest.DirectionCode = TestingSystem.Direction.East;
+                    break;
+                case 3:
+                    actualTest.DirectionCode = TestingSystem.Direction.SouthEast;
+                    break;
+                case 4:
+                    actualTest.DirectionCode = TestingSystem.Direction.South;
+                    break;
+                case 5:
+                    actualTest.DirectionCode = TestingSystem.Direction.SouthWest;
+                    break;
+                case 6:
+                    actualTest.DirectionCode = TestingSystem.Direction.West;
+                    break;
+                case 7:
+                    actualTest.DirectionCode = TestingSystem.Direction.NorthWest;
+                    break;
+                
+
+
+            }
 
 
             #region normalxml2
