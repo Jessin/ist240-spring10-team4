@@ -135,17 +135,6 @@ namespace WindowsFormsApplication1
 
             library_dll.Entities.TestingSystem actualTest1 = new library_dll.Entities.TestingSystem();
             if (DayButton.Checked)
-            {
-                if (LightRainButton.Checked)
-                    actualTest.Light = "ON";
-                if (LightSnowButton.Checked)
-                    actualTest.Light = "ON";
-                if (HeavyRainButton.Checked)
-                    actualTest.Light = "ON";
-                if (HeavySnowButton.Checked)
-                    actualTest.Light = "ON";
-            }
-            else if (!DayButton.Checked)
                 actualTest.Light = "OFF";
 
             if (NightButton.Checked)
@@ -154,12 +143,22 @@ namespace WindowsFormsApplication1
                 actualTest.WeatherCode = TestingSystem.Weather.Clear;
             if (LightRainButton.Checked)
                 actualTest.WeatherCode = TestingSystem.Weather.LightRain;
+
             if (LightSnowButton.Checked)
+            {
                 actualTest.WeatherCode = TestingSystem.Weather.LightSnow;
+                actualTest.Light = "ON";
+            }
             if (HeavyRainButton.Checked)
+            {
                 actualTest.WeatherCode = TestingSystem.Weather.HeavyRain;
+                actualTest.Light = "ON";
+            }
             if (HeavySnowButton.Checked)
+            {
                 actualTest.WeatherCode = TestingSystem.Weather.HeavySnow;
+                actualTest.Light = "ON";
+            }
             
 
             if (OHeatButton.Checked)
@@ -510,6 +509,97 @@ namespace WindowsFormsApplication1
 
         private void NoProblemButton_CheckedChanged(object sender, EventArgs e)
         {
+
+        }
+        // doing random for each buttons
+        private void RandButton_Click(object sender, EventArgs e)
+        {
+            // day or night random
+            int LightRand = library_dll.Entities.utility.RandomNumber(0, 5);
+            switch (LightRand)
+            {
+                case 0:
+                case 1:
+                case 2:
+                    DayButton.Checked = true;
+                   
+                    break;
+                case 3:
+                case 4:
+                case 5:
+                    
+                    NightButton.Checked = true;
+                    
+                    break;   
+
+            }
+
+            // weather random
+            int ExterRand = library_dll.Entities.utility.RandomNumber(0, 5);
+
+            switch (ExterRand)
+            {
+
+                case 0:
+                    ClearButton1.Checked = true;
+                    break;
+                case 1:
+                    LightRainButton.Checked = true;
+                    break;
+                case 2:
+                    LightSnowButton.Checked = true;
+                    break;
+                case 3:
+                    HeavyRainButton.Checked = true;
+                    break;
+                case 4:
+                    HeavySnowButton.Checked = true;
+                    break;
+            }
+            // car problem random
+            int InterRand = library_dll.Entities.utility.RandomNumber(0, 5);
+
+            switch (InterRand)
+            {
+
+                case 0:
+                    NoProblemButton.Checked = true;
+                    break;
+                case 1:
+                    OHeatButton.Checked = true;
+                    break;
+                case 2:
+                    WFluidButton.Checked = true;
+                    break;
+                case 3:
+                    TPressureButton.Checked = true;
+                    break;
+                case 4:
+                    OilButton.Checked = true;
+                    break;
+               
+            }
+            // traffic random 
+            int TrafficRand = library_dll.Entities.utility.RandomNumber(0, 4);
+
+            switch (TrafficRand)
+            {
+
+                case 0:
+                    NoTraffButton.Checked = true;
+                    break;
+
+                case 1:
+                    LightTraffButton.Checked = true;
+                    break;
+                case 2:
+                    MediumTraffButton.Checked = true;
+                    break;
+                case 3:
+                    HeavyTraffButton.Checked = true;
+                    break;
+            }
+
 
         }
 
