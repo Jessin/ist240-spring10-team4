@@ -401,6 +401,7 @@ namespace WindowsFormsApplication1
 
         private void EXITBUTTON_Click(object sender, EventArgs e)
         {
+            // on exit it will write to a file that it has been deleted if it has
             utility.DeleteFile();
             Application.Exit();
         }
@@ -472,6 +473,7 @@ namespace WindowsFormsApplication1
             // doc.Save("test4.xml"); 
             #endregion
 
+            // writes a default XML file on forum load so that the other 2 systems have something to read from.
             library_dll.Entities.TestingSystem tester = new library_dll.Entities.TestingSystem();
             tester.Light = "OFF";
             tester.WeatherCode = library_dll.Entities.TestingSystem.Weather.Clear;
@@ -481,6 +483,7 @@ namespace WindowsFormsApplication1
 
             tester.DirectionCode = library_dll.Entities.TestingSystem.Direction.North;
             XmlSerializer serializer = new XmlSerializer(typeof(library_dll.Entities.TestingSystem));
+            // the dots(../) means go up 1 folder.
             TextWriter textWriter = new StreamWriter("../../../../CarTestingInfo.xml");
             serializer.Serialize(textWriter, tester);
             textWriter.Close();
@@ -516,6 +519,7 @@ namespace WindowsFormsApplication1
         {
             // day or night random
             int LightRand = library_dll.Entities.utility.RandomNumber(0, 5);
+            // did more than 2 numbers for higher chance of change
             switch (LightRand)
             {
                 case 0:
@@ -536,7 +540,7 @@ namespace WindowsFormsApplication1
 
             // weather random
             int ExterRand = library_dll.Entities.utility.RandomNumber(0, 5);
-
+            // had problem with jus 0 - 4 : problem was the last button would never be checked.
             switch (ExterRand)
             {
 
@@ -600,6 +604,11 @@ namespace WindowsFormsApplication1
                     break;
             }
 
+
+        }
+
+        private void groupBox4_Enter_1(object sender, EventArgs e)
+        {
 
         }
 

@@ -7,7 +7,7 @@ namespace library_dll.Entities
 {
     public class HUDD : TestingSystem
     {
-       
+       // inherits from testing system
  
     
     }

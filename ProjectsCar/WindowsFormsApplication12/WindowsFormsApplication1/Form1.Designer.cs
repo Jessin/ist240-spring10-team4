@@ -303,6 +303,7 @@
             this.groupBox4.TabIndex = 8;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Traffic";
+            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter_1);
             // 
             // HeavyTraffButton
             // 
