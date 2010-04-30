@@ -7,7 +7,7 @@ namespace library_dll.Entities
 {
     public class MONSystem : TestingSystem
     {
-
+        // inherits from Testing System
 
     }
 }
