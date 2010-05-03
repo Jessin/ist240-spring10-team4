@@ -127,13 +127,13 @@ namespace library_dll.Entities
         {
             StreamWriter log;
 
-            if (!File.Exists("logfile.txt"))
+            if (!File.Exists("../../../../logfile.txt"))
             {
-                log = new StreamWriter("logfile.txt");
+                log = new StreamWriter("../../../../logfile.txt");
             }
             else
             {
-                log = File.AppendText("logfile.txt");
+                log = File.AppendText("../../../../logfile.txt");
             }
 
             // Write to the file:
